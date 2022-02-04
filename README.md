@@ -1,9 +1,9 @@
 # Arquitectura de producto de datos
-## Equipo Serverless
+## Team name: Serverless
 
 ## Team members:
 
-|**Nombre**|**User**|
+|**Name**|**User**|
 | ------------------ | ------------ |
 |Luis|@LuisValdez07|
 |Paulina|@pautrejo|
