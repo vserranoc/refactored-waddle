@@ -7,5 +7,5 @@
 | ------------------ | ------------ |
 |Luis|@LuisValdez|
 |Paulina|@pautrejo|
-|Jesús Enrique|@jesusmb230795|
+|Jesús Enrique Miranda Blanco |@jesusmb230795|
 |Valeria|@vserranoc|
