@@ -5,7 +5,7 @@
 
 |**Nombre**|**User**|
 | ------------------ | ------------ |
-|Luis|@LuisValdez|
+|Luis|@LuisValdez07|
 |Paulina|@pautrejo|
 |Jesús Enrique Miranda Blanco |@jesusmb230795|
 |Valeria|@vserranoc|
