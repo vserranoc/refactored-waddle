@@ -1,4 +1,4 @@
-# Arquitectura de producto de datos
+# Arquitectura de Producto de Datos
 ## Team name: Serverless
 
 ## Team members:
@@ -6,6 +6,6 @@
 |**Name**|**User**|
 | ------------------ | ------------ |
 |Luis|@LuisValdez07|
-|Paulina|@pautrejo|
+|Paulina Hernández Trejo|@pautrejo|
 |Jesús Enrique Miranda Blanco |@jesusmb230795|
 |Valeria|@vserranoc|
