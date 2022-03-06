@@ -33,6 +33,7 @@ The client can order in-depth customized reports about any specific topic or pro
 ![image](https://user-images.githubusercontent.com/72115928/156930736-bb1f9720-70e0-4563-9249-a246a5665bb9.png)
 
 **DATA**
+
 All the data is public and will be obtained from the social network API Twitter. 
 
 **MODELING**
