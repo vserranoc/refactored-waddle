@@ -18,10 +18,7 @@ We think that we are an awesome team because we have mutual respect,common and a
 **OBJECTIVE**
 
 One of the most relevant topics our days is sentiment analysis, with this tool we analyzed the sentiments derived from the conversations that occur on Twitter. Sentiment Analysis is a field from Natural Language Processing with the objective to learn and identify behaviors on the social network Twitter. This process works with three types of sentiments (positive, negative, or neutral opinions) about products, services, persons, organizations, or any other kind of entity about a specific text. With this tool, the user will be able to evaluate the content from trending topics or tweets. Also, will be able to filter, and order according to the feeling about one product.
-
-For this project we will be applying:
-
-Supervised Learning
+Using this Machine Learning tool, we can extract information from the final customer tweets and understand their needs. With this information, our clients will create a more user-centered product. Also, they will be able to understand and act more proactively on customer issues.
 
 **CLIENT**
 
