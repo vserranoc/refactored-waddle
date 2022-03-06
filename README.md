@@ -58,6 +58,7 @@ For this project, we will be using machine learning algorithms under supervision
   **Evaluation** 
   
 1.	Model performance, both during training and inference:
+
 •	We would review the performance of the model based on different error measures MSE, MAE
 •	During training we would take care of filtering validation data in the training set.
 •	We would check that future information variables were filtered, that is, we would observe that the selected variables do not include the response that we are trying to predict
@@ -66,11 +67,12 @@ For this project, we will be using machine learning algorithms under supervision
 •	We would use a validation sample large enough to be able to discriminate between what performs well or poorly.
 •	We will make cuts of different training/validation sizes and see what performance results from choosing a final model in a validation sample.
 
-2.	If application satisfies objectives
-1. I would identify if the application solves the problem for which it was created
-2. I would observe that its use implies low costs for users, it is quick and easy to consult.
-3. I would analyze if the application provides added value
-4. I would identify its benefits compared to other similar applications
+2.	Aplication satisfies objectives:
+
+•	I would identify if the application solves the problem for which it was created
+•	I would observe that its use implies low costs for users, it is quick and easy to consult.
+•	I would analyze if the application provides added value
+•	I would identify its benefits compared to other similar applications
 
 **Inference**
 
@@ -80,17 +82,18 @@ For this project, we will be using machine learning algorithms under supervision
 •	Multiple models could be trained and downloaded.
 •	Due to the amount of data, it is convenient to use a GPU, because they are efficient to process.
 
-**Compute **
+**Compute**
 
-To train the model we require a GPU due to the amount and type of data, in a CPU the processing could be very slow. We estimate that we would require XXX GPU hours.
+•	We require a GPU due to the amount and type of data, in a CPU the processing could be very slow. We estimate that we would require XXX GPU hours.
 
-We could make predictions on CPUs if we reduced the size of the database, however, we could have complications due to the reduced number of data. Which would cause an overfitting and little predictive capacity.
+•	We could make predictions on CPUs if we reduced the size of the database, however, we could have complications due to the reduced number of data. Which would cause an overfitting and little predictive capacity.
 
-We need capacity to store and process XXX TEXT records. Which contains an extension of XXX characters by XXXX.
+•	We need capacity to store and process XXX TEXT records. Which contains an extension of XXX characters by XXXX.
 
 **MVP (minimum viable product ) **
 
 • ……which will imply reducing costs in terms of:
+
 o Utilize team skills to the fullest
 o Reduces the complexity of the problem
 o Increases model accuracy
@@ -100,19 +103,24 @@ o We require few hyperparameters, which is easier to adjust than having a large 
 
 • It could be a challenge to reach the MVP because we have 7 days from the ETL to select a model that allows us to maximize the advantages of the data and minimize the risks of a computationally expensive model. Furthermore, in this period resilience is required in order not to abandon the model easily after having failed attempts. Therefore, using the simplest and at the same time adequate model could help us a lot.
 
-**10. Pre-mortems **
+**Pre-mortems**
 
-Reasons for the project to fail
+Reasons for the project to fail:
+
 •	Lack of time to choose the best model
 •	knowing how to implement an interface
 •	Knowledge of configuring an orchestrator
-o	Limitations of your application:  Technical aspects
+
+Limitations of your application:  Technical aspects
+
 •	The potential biases in our application:
-There is information about the business that we are not considering
+•	There is information about the business that we are not considering
+
 
 ### References
-*  [How to successfully invest in machine learning in an MVP]( https://sennalabs.com/th/blogs/how-to-successfully-invest-in-machine-learning-in-an-mvp)
-*  [Why Facebook and Twitter Opened the Door to NFTs(Why Facebook and Twitter Opened the Door to NFTs - Bloomberg)
+
+*  [How to successfully invest in machine learning in an MVP](https://sennalabs.com/th/blogs/how-to-successfully-invest-in-machine-learning-in-an-mvp)
+*  [Why Facebook and Twitter Opened the Door to NFTs(https://www.bloomberg.com/opinion/articles/2022-01-25/why-facebook-and-twitter-opened-the-door-to-nfts)
 *  [Manifiesto por el Desarrollo Ágil de Software](http://agilemanifesto.org/iso/es/manifesto.html)
 *  [Las GPU como pasado, presente y futuro de la computación](https://www.xataka.com/componentes/las-gpu-como-pasado-presente-y-futuro-de-la-computacion)
 *  [¿Éxito o fracaso? Indicadores para evaluar un proyecto](https://www.capterra.mx/blog/1114/exito-o-fracaso-indicadores-para-evaluar-un-proyecto)
