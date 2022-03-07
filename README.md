@@ -5,35 +5,39 @@
 
 |**Name**|**User**|
 | ------------------ | ------------ |
-|Luis|@LuisValdez07|
+|Luis Alberto Valdez Ibarra |@LuisValdez07|
 |Paulina Hernández Trejo|@pautrejo|
 |Jesús Enrique Miranda Blanco |@jesusmb230795|
 |Valeria Serrano Cote |@vserranoc|
+
 ## About team
-We think that we are an awesome team because we have mutual respect,common and aligned goals, open communication, patience, tolerance, everyone contributes, support each other, we complement each other, have fun, and overall, appreciate and encourage diverse thinking, learning and adaptation.
+We think that we are an awesome team because we have mutual respect, common and aligned goals, open communication, patience, tolerance, everyone contributes, support each other, we complement each other, has fun, and overall, appreciates and encourages diverse thinking, learning, and adaptation.
 
 **##ABOUT THE PROJECT**
 
+One of the most relevant topics our days is sentiment analysis, with this tool we analyzed the sentiments derived from the conversations that occur on Twitter. Sentiment Analysis is a field from Natural Language Processing with the objective to learn and identify behaviors on social networks like Twitter. This process works with three types of sentiments (positive, negative, or neutral opinions) about products, services, persons, organizations, or any other kind of entity about a specific text.
 
 **OBJECTIVE**
-
-One of the most relevant topics our days is sentiment analysis, with this tool we analyzed the sentiments derived from the conversations that occur on Twitter. Sentiment Analysis is a field from Natural Language Processing with the objective to learn and identify behaviors on the social network Twitter. This process works with three types of sentiments (positive, negative, or neutral opinions) about products, services, persons, organizations, or any other kind of entity about a specific text. With this tool, the user will be able to evaluate the content from trending topics or tweets. Also, will be able to filter, and order according to the feeling about one product.
-Using this Machine Learning tool, we can extract information from the final customer tweets and understand their needs. With this information, our clients will create a more user-centered product. Also, they will be able to understand and act more proactively on customer issues.
+ 
+The main objective of this tool is to evaluate the content from trending topics or tweets about traveling. This will help our clients to create a more user-centered product. Also, they will be able to understand and act more proactively on customer issues.
+Using this Machine Learning tool, we can extract information from the final customer tweets and understand their needs. In this case, our clients will be capable to filter, and ordering according to their feeling about their brands and products.
 
 **CLIENT**
 
-This tool is focused on MKT agencies, businesses that want to monitor the reputation or brand image of their products, or any other user that wants to know about trends or product behaviors.
-The client can order in-depth customized reports about any specific topic or product. The reports will contain current and trend charts, key concepts, associated with the requested topic. These reports will be broken by days, weeks, months.
+This tool is focused on traveling startups, MKT agencies, businesses that want to monitor the reputation or brand image of their products, or any other user that wants to know about trends or traveling product behaviors.
+The client can order in-depth customized reports about any specific topic or product related to traveling. The reports will contain current and trend charts, key concepts, associated with the requested topic. These reports will be broken by days, weeks, months.
 
-![image](https://user-images.githubusercontent.com/72115928/156930736-bb1f9720-70e0-4563-9249-a246a5665bb9.png)
+![Architecture](https://user-images.githubusercontent.com/72115928/156955964-05a45a54-7dce-44cd-8e7f-0984ae726942.png)
 
 **DATA**
 
-All the data is public and will be obtained from the social network API Twitter. 
+All the data is public and will be obtained from the social network API Twitter, processed with Bigquery, analyzed with the Natural Language Processing API provided by Google, at the end, all the results will be visualized through Data Studio by Google.
+We will be processing batches of 1500 tweets per run, divided into topics like Travel, Airbnb, Booking, Hotel, Trivago, Travel Agency, Despegar, Destination, Vacation, Instatravel, Tourism, etc.
 
 **MODELING**
 
-For this project, we will be using machine learning algorithms under supervision. As we need to train our model with many sample passages until the model can predict with accuracy the sentiments of the tweet, then the text is the input for the classifier and it will predict the sentiment as negative, neutral, or positive. We will be using traditional models and we selected these models because they are capable of scalability.
+For this project, we will be using the machine learning tool powered by Google. This tool called Natural Processing Language API, will help us to reveal the structure and the meaning of the text. This Google tool transforms the text into a comprehensible unit for the machine by using text vectorization. 
+We have an alternative and we can use traditional models. Some of these algorithms were selected because of their scalability. This alternative consists of taking a text sample, processing the piece of information until the model can predict with accuracy the sentiments of the tweet, then the text is the input for the classifier, and it will predict the sentiment as negative, neutral, or positive.
 
 - Naive Bayes
   This probabilistic classifier will help us to learn about the pattern of an examined set of data previously categorized.
@@ -52,76 +56,43 @@ For this project, we will be using machine learning algorithms under supervision
   
 ![KNN](https://user-images.githubusercontent.com/72115928/156932917-4333d0b9-7122-4985-9d2d-f3a885a117e5.png)
 
-  **Evaluation** 
+**EVALUATION** 
   
-1.	Model performance, both during training and inference:
+The evaluation will be based mainly on the quality of the data, we will check the number of followers of the accounts where we select the tweets. We will verify that they are not automatic advertising accounts that take advantage of trending news.
 
-•	We would review the performance of the model based on different error measures MSE, MAE.
+We check if our aplication satisfies objectives if the application solves the problem for which it was created,  its use implies low costs for users, it is quick and easy to consult. Also, if the application provides added value and finally, if it has benefits compared to other similar applications.
 
-•	During training we would take care of filtering validation data in the training set.
+**INFERENCE**
 
-•	We would check that future information variables were filtered, that is, we would observe that the selected variables do not include the response that we are trying to predict
+•	We use batch predictions because they increase the speed of the calculation as they are performed on blocks of data and not on each unit, for which we use CPU. 
 
-•	We would try to use samples as similar as possible to the population we are trying to forecast.
+**COMPUTE**
 
-•	We would carefully analyze that the data used is not censored.
-
-•	We would use a validation sample large enough to be able to discriminate between what performs well or poorly.
-
-•	We will make cuts of different training/validation sizes and see what performance results from choosing a final model in a validation sample.
-
-2.	Aplication satisfies objectives:
-
-•	If the application solves the problem for which it was created,  its use implies low costs for users, it is quick and easy to consult. Also, if the application provides added value and finally, if it has benefits compared to other similar applications.
-
-
-**Inference**
-
-•	We use batch predictions because they increase the speed of the calculation as they are performed on blocks of data and not on each unit. We run through a server because  the infrastructure used produces faster processing. A server provides cheap computing power and could only be paid for what is required. Moreover, multiple models could be trained and downloaded. Also, due to the amount of data, it is convenient to use a GPU, because they are efficient to process.
-
-
-**Compute**
-
-•	We require a GPU due to the amount and type of data, in a CPU the processing could be very slow. We estimate that we would require XXX GPU hours.
-
-•	We could make predictions on CPUs if we reduced the size of the database, however, we could have complications due to the reduced number of data. Which would cause an overfitting and little predictive capacity.
-
-•	We need capacity to store and process XXX TEXT records. Which contains an extension of XXX characters by XXXX.
+•	We will need one or two CPU with the capacity to process 1500 tweets, which have words like:'travel','booking','hotel','trivago','airbnb','travel agency','travelling','vacation','instatravel','tourism','traveller','trip','journey','tour','tourist'.
 
 **MVP (minimum viable product )**
 
-• ……which will imply reducing costs in terms of:
+We will extract tweets, calculate sentiment with the tools provided by Google and perform visualizations. 
 
-o Utilize team skills to the fullest
-
-o Reduces the complexity of the problem
-
-o Increases model accuracy
-
-o Consider data quality
-
-o The time taken for its implementation is low
-
-o We require few hyperparameters, which is easier to adjust than having a large number
-
+How difficult is it to get there? :
 
 • It could be a challenge to reach the MVP because we have 7 days from the ETL to select a model that allows us to maximize the advantages of the data and minimize the risks of a computationally expensive model. Furthermore, in this period resilience is required in order not to abandon the model easily after having failed attempts. Therefore, using the simplest and at the same time adequate model could help us a lot.
 
-**Pre-mortems**
+**PRE-MORTEMS**
 
 Reasons for the project to fail:
 
-•	Lack of time to choose the best model
+• Lack of time to choose the best model
 
-•	knowing how to implement an interface
+• Knowing how to implement an interface
 
-•	Knowledge of configuring an orchestrator
+• Knowledge of configuring an orchestrator
 
+• The potential biases in our selection of words
 
-Limitations of your application:  Technical aspects
+• Lack of data cleanliness
 
-The potential biases in our application: 	There is information about the business that we are not considering
-
+• There is information about the business that we are not considering
 
 ### References
 
