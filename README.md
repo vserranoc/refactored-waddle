@@ -9,21 +9,23 @@
 |Paulina Hernández Trejo|@pautrejo|
 |Jesús Enrique Miranda Blanco |@jesusmb230795|
 |Valeria Serrano Cote |@vserranoc|
+
 ## About team
-We think that we are an awesome team because we have mutual respect,common and aligned goals, open communication, patience, tolerance, everyone contributes, support each other, we complement each other, have fun, and overall, appreciate and encourage diverse thinking, learning and adaptation.
+We think that we are an awesome team because we have mutual respect, common and aligned goals, open communication, patience, tolerance, everyone contributes, support each other, we complement each other, has fun, and overall, appreciates and encourages diverse thinking, learning, and adaptation.
 
 **##ABOUT THE PROJECT**
 
+One of the most relevant topics our days is sentiment analysis, with this tool we analyzed the sentiments derived from the conversations that occur on Twitter. Sentiment Analysis is a field from Natural Language Processing with the objective to learn and identify behaviors on social networks like Twitter. This process works with three types of sentiments (positive, negative, or neutral opinions) about products, services, persons, organizations, or any other kind of entity about a specific text.
 
 **OBJECTIVE**
-
-One of the most relevant topics our days is sentiment analysis, with this tool we analyzed the sentiments derived from the conversations that occur on Twitter. Sentiment Analysis is a field from Natural Language Processing with the objective to learn and identify behaviors on the social network Twitter. This process works with three types of sentiments (positive, negative, or neutral opinions) about products, services, persons, organizations, or any other kind of entity about a specific text. With this tool, the user will be able to evaluate the content from trending topics or tweets about traveling. Also, will be able to filter, and order according to the feeling about this type of products.
-Using this Machine Learning tool, we can extract information from the final customer tweets and understand their needs. In this case, our clients will be able to create a more user-centered product. Also, they will be able to understand and act more proactively on customer issues.
+ 
+The main objective of this tool is to evaluate the content from trending topics or tweets about traveling. This will help our clients to create a more user-centered product. Also, they will be able to understand and act more proactively on customer issues.
+Using this Machine Learning tool, we can extract information from the final customer tweets and understand their needs. In this case, our clients will be capable to filter, and ordering according to their feeling about their brands and products.
 
 **CLIENT**
 
 This tool is focused on traveling startups, MKT agencies, businesses that want to monitor the reputation or brand image of their products, or any other user that wants to know about trends or traveling product behaviors.
-The client can order in-depth customized reports about any specific topic or product related with travleing. The reports will contain current and trend charts, key concepts, associated with the requested topic. These reports will be broken by days, weeks, months.
+The client can order in-depth customized reports about any specific topic or product related to traveling. The reports will contain current and trend charts, key concepts, associated with the requested topic. These reports will be broken by days, weeks, months.
 
 ![Architecture](https://user-images.githubusercontent.com/72115928/156955964-05a45a54-7dce-44cd-8e7f-0984ae726942.png)
 
