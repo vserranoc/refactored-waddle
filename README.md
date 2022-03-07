@@ -54,58 +54,27 @@ We have an alternative and we can use traditional models. Some of these algorith
   
 ![KNN](https://user-images.githubusercontent.com/72115928/156932917-4333d0b9-7122-4985-9d2d-f3a885a117e5.png)
 
-  **Evaluation** 
+  **EVALUATION** 
   
-1.	Model performance, both during training and inference:
+The evaluation will be based mainly on the quality of the data, we will check the number of followers of the accounts where we select the tweets. We will verify that they are not automatic advertising accounts that take advantage of trending news.
 
-•	We would review the performance of the model based on different error measures MSE, MAE.
-
-•	During training we would take care of filtering validation data in the training set.
-
-•	We would check that future information variables were filtered, that is, we would observe that the selected variables do not include the response that we are trying to predict
-
-•	We would try to use samples as similar as possible to the population we are trying to forecast.
-
-•	We would carefully analyze that the data used is not censored.
-
-•	We would use a validation sample large enough to be able to discriminate between what performs well or poorly.
-
-•	We will make cuts of different training/validation sizes and see what performance results from choosing a final model in a validation sample.
-
-2.	Aplication satisfies objectives:
-
-•	If the application solves the problem for which it was created,  its use implies low costs for users, it is quick and easy to consult. Also, if the application provides added value and finally, if it has benefits compared to other similar applications.
+We check if our aplication satisfies objectives if the application solves the problem for which it was created,  its use implies low costs for users, it is quick and easy to consult. Also, if the application provides added value and finally, if it has benefits compared to other similar applications.
 
 
-**Inference**
+**iNFERENCE**
 
-•	We use batch predictions because they increase the speed of the calculation as they are performed on blocks of data and not on each unit. We run through a server because  the infrastructure used produces faster processing. A server provides cheap computing power and could only be paid for what is required. Moreover, multiple models could be trained and downloaded. Also, due to the amount of data, it is convenient to use a GPU, because they are efficient to process.
+•	We use batch predictions because they increase the speed of the calculation as they are performed on blocks of data and not on each unit, for which we use CPU. 
 
 
-**Compute**
+**COMPUTE**
 
-•	We require a GPU due to the amount and type of data, in a CPU the processing could be very slow. We estimate that we would require XXX GPU hours.
-
-•	We could make predictions on CPUs if we reduced the size of the database, however, we could have complications due to the reduced number of data. Which would cause an overfitting and little predictive capacity.
-
-•	We need capacity to store and process XXX TEXT records. Which contains an extension of XXX characters by XXXX.
+•	We will need one or two CPU with the capacity to process 1500 tweets, which have words like:'travel','booking','hotel','trivago','airbnb','travel agency','travelling','vacation','instatravel','tourism','traveller','trip','journey','tour','tourist'.
 
 **MVP (minimum viable product )**
 
-• ……which will imply reducing costs in terms of:
+We will extract tweets, calculate sentiment with the tools provided by Google and perform visualizations. 
 
-o Utilize team skills to the fullest
-
-o Reduces the complexity of the problem
-
-o Increases model accuracy
-
-o Consider data quality
-
-o The time taken for its implementation is low
-
-o We require few hyperparameters, which is easier to adjust than having a large number
-
+How difficult is it to get there? :
 
 • It could be a challenge to reach the MVP because we have 7 days from the ETL to select a model that allows us to maximize the advantages of the data and minimize the risks of a computationally expensive model. Furthermore, in this period resilience is required in order not to abandon the model easily after having failed attempts. Therefore, using the simplest and at the same time adequate model could help us a lot.
 
@@ -113,16 +82,17 @@ o We require few hyperparameters, which is easier to adjust than having a large 
 
 Reasons for the project to fail:
 
-•	Lack of time to choose the best model
+• Lack of time to choose the best model
 
-•	knowing how to implement an interface
+• Knowing how to implement an interface
 
-•	Knowledge of configuring an orchestrator
+• Knowledge of configuring an orchestrator
 
+• The potential biases in our selection of words
 
-Limitations of your application:  Technical aspects
+• Lack of data cleanliness
 
-The potential biases in our application: 	There is information about the business that we are not considering
+• There is information about the business that we are not considering
 
 
 ### References
