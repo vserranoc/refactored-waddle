@@ -5,7 +5,7 @@
 
 |**Name**|**User**|
 | ------------------ | ------------ |
-|Luis|@LuisValdez07|
+|Luis Alberto Valdez Ibarra |@LuisValdez07|
 |Paulina Hernández Trejo|@pautrejo|
 |Jesús Enrique Miranda Blanco |@jesusmb230795|
 |Valeria Serrano Cote |@vserranoc|
@@ -17,23 +17,25 @@ We think that we are an awesome team because we have mutual respect,common and a
 
 **OBJECTIVE**
 
-One of the most relevant topics our days is sentiment analysis, with this tool we analyzed the sentiments derived from the conversations that occur on Twitter. Sentiment Analysis is a field from Natural Language Processing with the objective to learn and identify behaviors on the social network Twitter. This process works with three types of sentiments (positive, negative, or neutral opinions) about products, services, persons, organizations, or any other kind of entity about a specific text. With this tool, the user will be able to evaluate the content from trending topics or tweets. Also, will be able to filter, and order according to the feeling about one product.
-Using this Machine Learning tool, we can extract information from the final customer tweets and understand their needs. With this information, our clients will create a more user-centered product. Also, they will be able to understand and act more proactively on customer issues.
+One of the most relevant topics our days is sentiment analysis, with this tool we analyzed the sentiments derived from the conversations that occur on Twitter. Sentiment Analysis is a field from Natural Language Processing with the objective to learn and identify behaviors on the social network Twitter. This process works with three types of sentiments (positive, negative, or neutral opinions) about products, services, persons, organizations, or any other kind of entity about a specific text. With this tool, the user will be able to evaluate the content from trending topics or tweets about traveling. Also, will be able to filter, and order according to the feeling about this type of products.
+Using this Machine Learning tool, we can extract information from the final customer tweets and understand their needs. In this case, our clients will be able to create a more user-centered product. Also, they will be able to understand and act more proactively on customer issues.
 
 **CLIENT**
 
-This tool is focused on MKT agencies, businesses that want to monitor the reputation or brand image of their products, or any other user that wants to know about trends or product behaviors.
-The client can order in-depth customized reports about any specific topic or product. The reports will contain current and trend charts, key concepts, associated with the requested topic. These reports will be broken by days, weeks, months.
+This tool is focused on traveling startups, MKT agencies, businesses that want to monitor the reputation or brand image of their products, or any other user that wants to know about trends or traveling product behaviors.
+The client can order in-depth customized reports about any specific topic or product related with travleing. The reports will contain current and trend charts, key concepts, associated with the requested topic. These reports will be broken by days, weeks, months.
 
-![image](https://user-images.githubusercontent.com/72115928/156930736-bb1f9720-70e0-4563-9249-a246a5665bb9.png)
+![Architecture](https://user-images.githubusercontent.com/72115928/156955964-05a45a54-7dce-44cd-8e7f-0984ae726942.png)
 
 **DATA**
 
-All the data is public and will be obtained from the social network API Twitter. 
+All the data is public and will be obtained from the social network API Twitter, processed with Bigquery, analyzed with the Natural Language Processing API provided by Google, at the end, all the results will be visualized through Data Studio by Google.
+We will be processing batches of 100 tweets per run, divided into topics like Travel, Airbnb, Booking, Hotel, Trivago, Travel Agency, Despegar, Destination, Vacation, Instatravel, Tourism, etc.
 
 **MODELING**
 
-For this project, we will be using machine learning algorithms under supervision. As we need to train our model with many sample passages until the model can predict with accuracy the sentiments of the tweet, then the text is the input for the classifier and it will predict the sentiment as negative, neutral, or positive. We will be using traditional models and we selected these models because they are capable of scalability.
+For this project, we will be using the machine learning tool powered by Google. This tool called Natural Processing Language API, will help us to reveal the structure and the meaning of the text. This Google tool transforms the text into a comprehensible unit for the machine by using text vectorization. 
+We have an alternative and we can use traditional models. Some of these algorithms were selected because of their scalability. This alternative consists of taking a text sample, processing the piece of information until the model can predict with accuracy the sentiments of the tweet, then the text is the input for the classifier, and it will predict the sentiment as negative, neutral, or positive.
 
 - Naive Bayes
   This probabilistic classifier will help us to learn about the pattern of an examined set of data previously categorized.
