@@ -32,7 +32,7 @@ The client can order in-depth customized reports about any specific topic or pro
 **DATA**
 
 All the data is public and will be obtained from the social network API Twitter, processed with Bigquery, analyzed with the Natural Language Processing API provided by Google, at the end, all the results will be visualized through Data Studio by Google.
-We will be processing batches of 100 tweets per run, divided into topics like Travel, Airbnb, Booking, Hotel, Trivago, Travel Agency, Despegar, Destination, Vacation, Instatravel, Tourism, etc.
+We will be processing batches of 1500 tweets per run, divided into topics like Travel, Airbnb, Booking, Hotel, Trivago, Travel Agency, Despegar, Destination, Vacation, Instatravel, Tourism, etc.
 
 **MODELING**
 
@@ -56,17 +56,15 @@ We have an alternative and we can use traditional models. Some of these algorith
   
 ![KNN](https://user-images.githubusercontent.com/72115928/156932917-4333d0b9-7122-4985-9d2d-f3a885a117e5.png)
 
-  **EVALUATION** 
+**EVALUATION** 
   
 The evaluation will be based mainly on the quality of the data, we will check the number of followers of the accounts where we select the tweets. We will verify that they are not automatic advertising accounts that take advantage of trending news.
 
 We check if our aplication satisfies objectives if the application solves the problem for which it was created,  its use implies low costs for users, it is quick and easy to consult. Also, if the application provides added value and finally, if it has benefits compared to other similar applications.
 
-
-**iNFERENCE**
+**INFERENCE**
 
 •	We use batch predictions because they increase the speed of the calculation as they are performed on blocks of data and not on each unit, for which we use CPU. 
-
 
 **COMPUTE**
 
@@ -80,7 +78,7 @@ How difficult is it to get there? :
 
 • It could be a challenge to reach the MVP because we have 7 days from the ETL to select a model that allows us to maximize the advantages of the data and minimize the risks of a computationally expensive model. Furthermore, in this period resilience is required in order not to abandon the model easily after having failed attempts. Therefore, using the simplest and at the same time adequate model could help us a lot.
 
-**Pre-mortems**
+**PRE-MORTEMS**
 
 Reasons for the project to fail:
 
@@ -95,7 +93,6 @@ Reasons for the project to fail:
 • Lack of data cleanliness
 
 • There is information about the business that we are not considering
-
 
 ### References
 
