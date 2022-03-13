@@ -5,6 +5,7 @@ import tweepy
 import pandas as pd
 import yaml
 from google.cloud import bigquery
+from clean_string import clean_tweets
 
 with open("src/config.yaml", "r") as config:
     config = yaml.safe_load(config)
@@ -28,6 +29,7 @@ text = []
 followers = []
 location = []
 verified = []
+themes_rows = []
 df = pd.DataFrame(columns=['user','text','followers','location','verified'])
 
 
@@ -49,11 +51,14 @@ for theme in themes:
 		followers.append(tweet.user.followers_count)
 		location.append(tweet.user.location)
 		verified.append(tweet.user.verified)
+		themes_rows.append(theme)
 df['user'] = user
 df['text'] = text
+df['text'] = df['text'].apply(lambda x:clean_tweets(x))
 df['followers'] = followers
 df['location'] = location
 df['verified'] = verified
+df['theme'] = themes_rows
 
 #Load
 #To BigQuery
