@@ -1,6 +1,5 @@
 # Kind of process and technologies
-
-The process made it is an ELT.
+The process is an ETL.
 
 ## Technologies:
 - Bigquery
