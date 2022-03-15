@@ -3,6 +3,8 @@ The process is an ETL.
 
 ## Technologies:
 - Bigquery
+- Vertex AI
+  - Instance name: workplace
 
 # Summary
 This ETL make calls to twitter API for each topic, then each payload is unpacked into a row for a table.
