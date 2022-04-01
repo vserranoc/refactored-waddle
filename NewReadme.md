@@ -3,6 +3,10 @@
 ### My data product helps you decide between two low-cost airlines with similar prices and routes. Users' perception of airline service is a latent variable that would help compare the service provided by airlines and facilitate users' decisions. 
 ### Our application allows knowing the feeling of users regarding the service of these airlines, which allows them to make an informed decision. Beyond the features listed below, which we assume are known to users.
 
+| ------------------ | ------------ | ------------------ |
+| **Feature** | **Southewst Airlines** | **JetBlue** |
+| Aircraft |738 aircraft | 265  | 
+| Type aircraft | Boeing 737 | A320, A321 and Embraer ERJ-190 |
 |Average cost|$153|$180|
 |Strategy|Cost-efficiency and customer satisfaction from efficient operations|Charging higher prices for a packaged service|
 |Seat pitch|32 to 33 inches|	32 to 35 inches|
