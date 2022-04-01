@@ -20,7 +20,7 @@
 |Seat reservation||Open seating policy (meaning that there are no seat reservations)|You can pay more for a better seat|
 |Seating amenities|Their seats are simple	Video screens and Power ports|
 |Food|Complementary drink and a bag of snack mix|Complementary drink and a bag of sack mix.  Also, there’s a food for purchase menu| 
-
+####Source: Own elaboration based on Southwest Vs. JetBlue - Which American LCC is Better For You? (https://simpleflying.com/southwest-vs-jet-blue/) and Southwest vs JetBlue: which airline is likely to give you less heartburn? (https://www.sanspotter.com/southwest-vs-jetblue/)
 
 ## Data
 
