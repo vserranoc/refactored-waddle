@@ -18,7 +18,7 @@ Our application allows knowing the feeling of users regarding the service of the
 |National coverage|It has a vast flight network covering a majority of the United States|It is focused primarily on the eastern half – although they do fly from coast to coast |
 |Frequent flyer program|Rapid Rewards| TrueBlue |
 |Seat reservation|No|Open seating policy (meaning that there are no seat reservations)|You can pay more for a better seat|
-|Seating amenities|Their seats are simple	Video screens and Power ports|
+|Seating amenities|No|Their seats are simple	Video screens and Power ports|
 |Food|Complementary drink and a bag of snack mix|Complementary drink and a bag of sack mix.  Also, there’s a food for purchase menu| 
 
 Source: Own elaboration based on  [Southwest Vs. JetBlue - Which American LCC is Better For You?](https://simpleflying.com/southwest-vs-jet-blue/) and  [Southwest vs JetBlue: which airline is likely to give you less heartburn?](https://www.sanspotter.com/southwest-vs-jetblue/)
