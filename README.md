@@ -28,7 +28,7 @@ We want to toast travel agencies with useful tools to make recommendations to th
 
 ### **Sentiment Analisys**
 Sentiment analysis is the extraction and processing of the subjective content of texts, which are usually classified into positive, negative and neutral content. This technique is part of Natural Language Processing or NLP [Natural Language Processing](https://www.sas.com/es_ar/insights/analytics/what-is-natural-language-processing-nlp.html).
-There are two popular methods for analyzing the text of tweets. The first one uses the machine-learning approach and the second one uses lexical dictionaries.(https://dspace.unia.es/handle/10334/5915)
+There are two popular methods for analyzing the text of tweets. The first one uses the [machine-learning approach](https://en.wikipedia.org/wiki/Machine_learning] and the second one uses [lexical dictionaries](https://en.wikipedia.org/wiki/Lexical_analysis)
 
 ### **Data**
 We analyze the sentiments obtained from the conversations that occur in Twitter, the social networks that is the most popular in the world. [Twitter](https://es.wikipedia.org/wiki/Twitter) had more than 330 million monthly active users, at the beginning of 2019. 
