@@ -1,81 +1,74 @@
-# Arquitectura de Producto de Datos
-## Team name: Serverless
+# Which american Low Cost Carriers is better for you: Jet Blue or SouthwestAir
+## Sentiment Analysis in Twitter about american airlines
 
-## Team members:
-|**Name**|**User**|
-| ------------------ | ------------ |
-|Luis Alberto Valdez Ibarra |@LuisValdez07|
-|Paulina Hernández Trejo|@pautrejo|
-|Jesús Enrique Miranda Blanco |@jesusmb230795|
-|Valeria Serrano Cote |@vserranoc|
+ We offer a product that helps helps you decide between two low-cost airlines with similar prices and routes. Users' perception of airline service is a relevant  variable that would help compare the service provided by airlines and facilitate users' decisions. 
+Our application allows knowing the feeling of users regarding the service of these airlines, which allows them to make an informed decision. Beyond the features listed below, which we assume are known to users.
 
-## **About team**
-We think that we are an awesome team because we have mutual respect, common and aligned goals, open communication, patience, tolerance, everyone contributes, support each other, we complement each other, has fun, and overall, appreciates and encourages diverse thinking, learning, and adaptation.
+| Feature | Southewst Airlines | JetBlue |
+| --------------------------------------------- | --------------------------------------------------------- | ----------------------------------------------------- |
+| Aircraft |738 aircraft | 265  | 
+| Type aircraft | Boeing 737 | A320, A321 and Embraer ERJ-190 |
+|Average cost|$153|$180|
+|Strategy|Cost-efficiency and customer satisfaction from efficient operations|Charging higher prices for a packaged service|
+|Seat pitch|32 to 33 inches|	32 to 35 inches|
+|Seat width|17.8 at most, the average is as low as 17 inches|17.8 to 18.5 inches|
+|Model| the point-to-point model, flying nonstop |the hub-and-spoke set-up, or  focus cities, mixing in point-to-point |
+|Hawaii|It flies to Hawaii|It does have a codeshare with Hawaiian Airlines from Boston|
+|International coverage|Southwest's network does not stretch further than Central America|JetBlue has services to several cities in south America and Caribbean. JetBlue flies transatlantic to London|
+|National coverage|It has a vast flight network covering a majority of the United States|It is focused primarily on the eastern half – although they do fly from coast to coast |
+|Frequent flyer program|Rapid Rewards| TrueBlue |
+|Seat reservation|No|Open seating policy (meaning that there are no seat reservations)|You can pay more for a better seat|
+|Seating amenities|Their seats are simple	Video screens and Power ports|
+|Food|Complementary drink and a bag of snack mix|Complementary drink and a bag of sack mix.  Also, there’s a food for purchase menu| 
 
-## **About the project**
+Source: Own elaboration based on  [Southwest Vs. JetBlue - Which American LCC is Better For You?](https://simpleflying.com/southwest-vs-jet-blue/) and  [Southwest vs JetBlue: which airline is likely to give you less heartburn?](https://www.sanspotter.com/southwest-vs-jetblue/)
 
-One of the most relevant topics our days is sentiment analysis, with this tool we analyzed the sentiments derived from the conversations that occur on Twitter. Sentiment Analysis is a field from Natural Language Processing with the objective to learn and identify behaviors on social networks like Twitter. This process works with three types of sentiments (positive, negative, or neutral opinions) about products, services, persons, organizations, or any other kind of entity about a specific text.
+We want to provide users with additional information to that presented in the table, what our sentiment analysis will yield is that variable of the sentiment of service users that would help the undecided to lean towards one of the two airlines.
+We want to toast travel agencies with useful tools to make recommendations to their clients, since the characteristics of the flights offered by airlines could be insufficient, considering the feelings of users to make their recommendations could help them make their advice objective
 
-## **Objective**
- 
-The main objective of this tool is to evaluate the content from trending topics or tweets about traveling. This will help our clients to create a more user-centered product. Also, they will be able to understand and act more proactively on customer issues.
-Using this Machine Learning tool, we can extract information from the final customer tweets and understand their needs. In this case, our clients will be capable to filter, and ordering according to their feeling about their brands and products.
+### **Data**
+ We analyze the sentiments obtained from the conversations that occur in Twitter, the social networks that is the most popular in the world and it is used by various purposes: politics, journalism, science, entertainment, popular culture, business, etc.
+The social network allows us to extract the tweets of users, which we use as an object of study. Specifically we do the following:
 
-## **Client**
+1. We extract the tweets that users leave towards airlines. As users of the social network, we request the developer account in the link: https://developer.twitter.com/en/apps.
+2. Once the account is approved, an app is created, only the data is filled in and the created app is registered.
+3. We access the “keys and Access Tokens” tab and click on the “Generate My Access Token and Token Secret” button, these are credentials to be able to access the Twitter API and extract the tweets that are needed.
+4. The extraction of tweets is done with Python's Jupyter Notebook. The libraries we use to access the Twitter API are:
+The following diagram illustrates the points indicated.
 
-This tool is focused on traveling startups, MKT agencies, businesses that want to monitor the reputation or brand image of their products, or any other user that wants to know about trends or traveling product behaviors.
-The client can order in-depth customized reports about any specific topic or product related to traveling. The reports will contain current and trend charts, key concepts, associated with the requested topic. These reports will be broken by days, weeks, months.
+### **Model**
 
-![Architecture](https://user-images.githubusercontent.com/72115928/156955964-05a45a54-7dce-44cd-8e7f-0984ae726942.png)
 
-## **Data**
+### **Evaluation**
+We evaluate model performance throught:
 
-All the data is public and will be obtained from the social network API Twitter, processed with Bigquery, analyzed with the Natural Language Processing API provided by Google, at the end, all the results will be visualized through Data Studio by Google.
-We will be processing batches of 1500 tweets per run, divided into topics like Travel, Airbnb, Booking, Hotel, Trivago, Travel Agency, Despegar, Destination, Vacation, Instatravel, Tourism, etc.
+•	We would review the performance of the model based on different error measures MSE, MAE
 
-## **Modelling**
+•	During training we would take care of filtering validation data in the training set
 
-For this project, we will be using the machine learning tool powered by Google. This tool called Natural Processing Language API, will help us to reveal the structure and the meaning of the text. This Google tool transforms the text into a comprehensible unit for the machine by using text vectorization. 
-We have an alternative and we can use traditional models. Some of these algorithms were selected because of their scalability. This alternative consists of taking a text sample, processing the piece of information until the model can predict with accuracy the sentiments of the tweet, then the text is the input for the classifier, and it will predict the sentiment as negative, neutral, or positive.
+•	We would try to use samples as similar as possible to the population we are trying to forecast
 
-- Naive Bayes
-  This probabilistic classifier will help us to learn about the pattern of an examined set of data previously categorized.
-  
-  ![Naive Bayes](https://user-images.githubusercontent.com/72115928/156931898-70efd6e1-774f-450a-9a20-0c7b8370b310.jpeg)
-  
-![Naive Bayes 2](https://user-images.githubusercontent.com/72115928/156932393-389682e6-49dc-4106-b40e-136212a75638.png)
-  
-- Support Vector Machines
-  This model will be defining the decision boundaries. It will take into count two vectors. The input data already classified will be converted into a class. The next step is to find a margin between the two classes. The objective of this is to maximize the margin to reduce indecisive decisions. Also, SVM will help us to identify and recognize all the factors to understand the model successfully.
-  
-  ![SVM](https://user-images.githubusercontent.com/72115928/156932505-66ca22b6-c62c-4271-a8d6-550b5a905aa0.png)
+•	We would carefully analyze that the data used is not censored
 
-- _k_-nearest neighborgs
-  This approach will assign sentiment labels by creating vectors for each example in the test set and during the training. 
-  
-![KNN](https://user-images.githubusercontent.com/72115928/156932917-4333d0b9-7122-4985-9d2d-f3a885a117e5.png)
+•	We would use a validation sample large enough to be able to discriminate between what performs well or poorly
 
-**Evaluation** 
-  
-The evaluation will be based mainly on the quality of the data, we will check the number of followers of the accounts where we select the tweets. We will verify that they are not automatic advertising accounts that take advantage of trending news.
+•	We will make cuts of different training/validation sizes and see what performance results from choosing a final model in a validation sample.
 
-We check if our aplication satisfies objectives if the application solves the problem for which it was created,  its use implies low costs for users, it is quick and easy to consult. Also, if the application provides added value and finally, if it has benefits compared to other similar applications.
+If application satisfies objectives: we would identify if the application solves the problem for which it was created, we would observe that its use implies low costs for users, it is quick and easy to consult. Also, we would analyze if the application provides added value and we would identify its benefits compared to other similar applications
 
-**Inference**
+### **Inference**
 
 •	We use batch predictions because they increase the speed of the calculation as they are performed on blocks of data and not on each unit, for which we use CPU. 
 
-**Compute**
+•	We will need one or two CPU with the capacity to process 1500 tweets, which have words like:~~'travel','booking','hotel','trivago','airbnb','travel agency','travelling','vacation','instatravel','tourism','traveller','trip','journey','tour','tourist'.~~
 
-•	We will need one or two CPU with the capacity to process 1500 tweets, which have words like:'travel','booking','hotel','trivago','airbnb','travel agency','travelling','vacation','instatravel','tourism','traveller','trip','journey','tour','tourist'.
-
-**MVP (minimum viable product )**
+### **MVP (minimum viable product )**
 
 We will extract tweets, calculate sentiment with the tools provided by Google and perform visualizations. 
 
 How difficult is it to get there? :
 
-• It could be a challenge to reach the MVP because we have 7 days from the ETL to select a model that allows us to maximize the advantages of the data and minimize the risks of a computationally expensive model. Furthermore, in this period resilience is required in order not to abandon the model easily after having failed attempts. Therefore, using the simplest and at the same time adequate model could help us a lot.
+• It could be a challenge to reach the MVP because we have few days from the ETL to select a model that allows us to maximize the advantages of the data and minimize the risks of a computationally expensive model. Furthermore, in this period resilience is required in order not to abandon the model easily after having failed attempts. Therefore, using the simplest and at the same time adequate model could help us a lot.
 
 **Pre-Mortems**
 
@@ -93,14 +86,13 @@ Reasons for the project to fail:
 
 • There is information about the business that we are not considering
 
-## References
+
+
+
+
+### References
 
 *  [How to successfully invest in machine learning in an MVP](https://sennalabs.com/th/blogs/how-to-successfully-invest-in-machine-learning-in-an-mvp)
-*  [Why Facebook and Twitter Opened the Door to NFTs](https://www.bloomberg.com/opinion/articles/2022-01-25/why-facebook-and-twitter-opened-the-door-to-nfts)
-*  [Manifiesto por el Desarrollo Ágil de Software](http://agilemanifesto.org/iso/es/manifesto.html)
 *  [Las GPU como pasado, presente y futuro de la computación](https://www.xataka.com/componentes/las-gpu-como-pasado-presente-y-futuro-de-la-computacion)
-*  [¿Éxito o fracaso? Indicadores para evaluar un proyecto](https://www.capterra.mx/blog/1114/exito-o-fracaso-indicadores-para-evaluar-un-proyecto)
 *  [Notas aprendizaje de máquina, 2021](https://github.com/felipegonzalez/aprendizaje-maquina-mcd-2021)
 *  [Machine learning on mobile: on the device or in the cloud?](https://machinethink.net/blog/machine-learning-device-or-cloud/)
-
-
