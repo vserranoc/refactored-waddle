@@ -23,18 +23,26 @@ Our application allows knowing the feeling of users regarding the service of the
 
 Source: Own elaboration based on  [Southwest Vs. JetBlue - Which American LCC is Better For You?](https://simpleflying.com/southwest-vs-jet-blue/) and  [Southwest vs JetBlue: which airline is likely to give you less heartburn?](https://www.sanspotter.com/southwest-vs-jetblue/)
 
-We want to provide users with additional information to that presented in the table, what our sentiment analysis will yield is that variable of the sentiment of service users that would help the undecided to lean towards one of the two airlines.
+We want to provide users with additional information to that presented in the table, what our sentiment analysis will yield is a subjetive variable of the feling of  users about service, that would help the undecided to lean towards one of the two airlines.
 We want to toast travel agencies with useful tools to make recommendations to their clients, since the characteristics of the flights offered by airlines could be insufficient, considering the feelings of users to make their recommendations could help them make their advice objective
 
+### **Sentiment Analisys**
+
+
 ### **Data**
- We analyze the sentiments obtained from the conversations that occur in Twitter, the social networks that is the most popular in the world and it is used by various purposes: politics, journalism, science, entertainment, popular culture, business, etc.
+We analyze the sentiments obtained from the conversations that occur in Twitter, the social networks that is the most popular in the world. [Twitter] (https://es.wikipedia.org/wiki/Twitter) had more than 330 million monthly active users, at the beginning of 2019. 
+With Twitter, people can send and spread messages of up to 140 characters, known as tweets. Through this subjective information of various aspects of daily life is generated. Twitter is used by various purposes: politics, journalism, science, entertainment, popular culture, business, etc.
+For this reason, several industries extract the opinions of this social network to know the pulse of products or services.
+On Twitter, it is possible to identify topics with the use of hashtags or tags, which begin with the # character and a string of characters that follows, made up of one or more words together. These labels are used to group tweets tagged in the same way, which allows users to quickly obtain results on the same topic.
+
 The social network allows us to extract the tweets of users, which we use as an object of study. Specifically we do the following:
 
 1. We extract the tweets that users leave towards airlines. As users of the social network, we request the developer account in the link: https://developer.twitter.com/en/apps.
 2. Once the account is approved, an app is created, only the data is filled in and the created app is registered.
 3. We access the “keys and Access Tokens” tab and click on the “Generate My Access Token and Token Secret” button, these are credentials to be able to access the Twitter API and extract the tweets that are needed.
 4. The extraction of tweets is done with Python's Jupyter Notebook. The libraries we use to access the Twitter API are:
-The following diagram illustrates the points indicated.
+The following diagram illustrates the points indicated...
+
 
 ### **Model**
 
