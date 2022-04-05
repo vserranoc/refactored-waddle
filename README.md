@@ -27,7 +27,8 @@ We want to provide users with additional information to that presented in the ta
 We want to toast travel agencies with useful tools to make recommendations to their clients, since the characteristics of the flights offered by airlines could be insufficient, considering the feelings of users to make their recommendations could help them make their advice objective
 
 ### **Sentiment Analisys**
-
+Sentiment analysis is the extraction and processing of the subjective content of texts, which are usually classified into positive, negative and neutral content. This technique is part of Natural Language Processing or NLP [Natural Language Processing](https://www.sas.com/es_ar/insights/analytics/what-is-natural-language-processing-nlp.html).
+There are two popular methods for analyzing the text of tweets. The first one uses the machine-learning approach and the second one uses lexical dictionaries.(https://dspace.unia.es/handle/10334/5915)
 
 ### **Data**
 We analyze the sentiments obtained from the conversations that occur in Twitter, the social networks that is the most popular in the world. [Twitter](https://es.wikipedia.org/wiki/Twitter) had more than 330 million monthly active users, at the beginning of 2019. 
@@ -105,3 +106,11 @@ Reasons for the project to fail:
 *  [Las GPU como pasado, presente y futuro de la computación](https://www.xataka.com/componentes/las-gpu-como-pasado-presente-y-futuro-de-la-computacion)
 *  [Notas aprendizaje de máquina, 2021](https://github.com/felipegonzalez/aprendizaje-maquina-mcd-2021)
 *  [Machine learning on mobile: on the device or in the cloud?](https://machinethink.net/blog/machine-learning-device-or-cloud/)
+*  [Análisis de sentimiento en Twitter. Reputación de las principales aerolíneas europeas tras la crisis sanitaria del COVID-19](https://dspace.unia.es/handle/10334/5915)
+*  [Sentiment Analysis in Social Networks through Topic Modeling](http://www.lrec-conf.org/proceedings/lrec2016/pdf/682_Paper.pdf)
+*  [Análisis de Sentimientos en Twitter: Una Implementación sobre Cloudera](https://ria.utn.edu.ar/bitstream/handle/20.500.12272/4704/An%C3%A1lisis_de_Sentimientos_en_Twitter_%28167%29.pdf?sequence=1)
+
+
+
+
+
