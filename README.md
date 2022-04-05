@@ -30,7 +30,7 @@ We want to toast travel agencies with useful tools to make recommendations to th
 
 
 ### **Data**
-We analyze the sentiments obtained from the conversations that occur in Twitter, the social networks that is the most popular in the world. [Twitter] (https://es.wikipedia.org/wiki/Twitter) had more than 330 million monthly active users, at the beginning of 2019. 
+We analyze the sentiments obtained from the conversations that occur in Twitter, the social networks that is the most popular in the world. [Twitter](https://es.wikipedia.org/wiki/Twitter) had more than 330 million monthly active users, at the beginning of 2019. 
 With Twitter, people can send and spread messages of up to 140 characters, known as tweets. Through this subjective information of various aspects of daily life is generated. Twitter is used by various purposes: politics, journalism, science, entertainment, popular culture, business, etc.
 For this reason, several industries extract the opinions of this social network to know the pulse of products or services.
 
