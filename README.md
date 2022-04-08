@@ -62,6 +62,12 @@ The following diagram illustrates the points indicated...
 
 
 ### **Model**
+We use traditional models, some of these algorithms were selected because of their scalability. This alternative consists of taking a text sample, processing the piece of information until the model can predict with accuracy the sentiments of the tweet, then the text is the input for the classifier, and it will predict the sentiment as negative, neutral, or positive.
+
+- Naive Bayes
+  This probabilistic classifier will help us to learn about the pattern of an examined set of data previously categorized.
+-Logistic regression
+  It is a type of regression analysis, which is used to predict the outcome of a categorical variable, in our case sentiment (positive, negative or neutral), based on   the independent or predictor variables, for us this are the words that we obtein from twitter. 
 
 
 ### **Evaluation**
