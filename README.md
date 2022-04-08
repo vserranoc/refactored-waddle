@@ -1,3 +1,18 @@
+# Arquitectura de Producto de Datos
+## Team name: Serverless
+
+### Team members:
+|**Name**|**User**|
+| ------------------ | ------------ |
+|Luis Alberto Valdez Ibarra |@LuisValdez07|
+|Paulina Hernández Trejo|@pautrejo|
+|Jesús Enrique Miranda Blanco |@jesusmb230795|
+|Valeria Serrano Cote |@vserranoc|
+
+### **About team**
+We think that we are an awesome team because we have mutual respect, common and aligned goals, open communication, patience, tolerance, everyone contributes, support each other, we complement each other, has fun, and overall, appreciates and encourages diverse thinking, learning, and adaptation.
+
+
 # Which american Low Cost Carriers is better for you: Jet Blue or SouthwestAir
 ## Sentiment Analysis in Twitter about american airlines
 
@@ -70,7 +85,7 @@ If application satisfies objectives: we would identify if the application solves
 
 •	We use batch predictions because they increase the speed of the calculation as they are performed on blocks of data and not on each unit, for which we use CPU. 
 
-•	We will need one or two CPU with the capacity to process 1500 tweets, which have words like:~~'travel','booking','hotel','trivago','airbnb','travel agency','travelling','vacation','instatravel','tourism','traveller','trip','journey','tour','tourist'.~~
+•	We will need one or two CPU with the capacity to process 2000 tweets, obtained through the words: @JetBlue and @SouthwestAir
 
 ### **MVP (minimum viable product )**
 
