@@ -1,5 +1,6 @@
 # :airplane: :seat: The Models 
 
+# Which airline is better for users?
 # Description of models
 
 ## 1. Data
@@ -83,6 +84,11 @@ The curve ROC is the graph resulting from representing, for each threshold value
 
 We consider the [ROC](https://es.wikipedia.org/wiki/Curva_ROC) curve in each model in order to observe the graph of the ratio or proportion of true positives (VPR = Ratio of True Positives) against the ratio or proportion of false positives (FPR = Ratio of False Positives) also according to the discrimination threshold varies (value from which we decide that a case is positive). In addition, the ROC curve allows us to observe the sensitivity of VPR and FPR when modifying the decision threshold.
 
+## Conclusion 
+There is a large number of negative words associated with airline services, in general users are dissatisfied with these LCC, however, the opinion of JetBlue users is worse than that of SouthwestAir.
+The model used with the Naive Bayes method seems to be better for this exercise.
+
+<img src="/model/image/sentimiento.jpeg">
 
 
 ## References
