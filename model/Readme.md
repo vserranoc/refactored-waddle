@@ -60,6 +60,7 @@ The main disadvantage of NB Algorithm is:
 * It’s a decent classifier but a bad estimator
 * It works well with discrete values but won’t work with continuous values (can’t be used in a regression)
 
+See more at [Sentiment Analysis: An Introduction to Naive Bayes Algorithm](https://towardsdatascience.com/sentiment-analysis-introduction-to-naive-bayes-algorithm-96831d77ac91)
 
 ## Logistic Regression
 
