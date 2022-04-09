@@ -20,7 +20,7 @@ Then, each team member manually tagged 500 tweets into three categories
 * **-1** Negative perception towards the airline
 * **0** Neutral perception towards the airline
 
-
+Detailed description at [EDA](https://github.com/vserranoc/refactored-waddle/blob/main/model/EDA.ipynb)
 
 ## 2. Feature engineering
 
@@ -83,6 +83,9 @@ This intuition can be easiliy extended for more than two categories, by using th
 The curve ROC is the graph resulting from representing, for each threshold value, the sensitivity and specificity measurements of the diagnostic test. Sensitivity is the proportion of individuals who present the event of interest and who are classified by the test as carriers of said event. While, the specificity quantifies the proportion of individuals that do not present it and are classified by the test as such. 
 
 We consider the [ROC](https://es.wikipedia.org/wiki/Curva_ROC) curve in each model in order to observe the graph of the ratio or proportion of true positives (VPR = Ratio of True Positives) against the ratio or proportion of false positives (FPR = Ratio of False Positives) also according to the discrimination threshold varies (value from which we decide that a case is positive). In addition, the ROC curve allows us to observe the sensitivity of VPR and FPR when modifying the decision threshold.
+
+Detailed description at [Model](https://github.com/vserranoc/refactored-waddle/blob/main/model/sentiment_training.ipynb)
+
 
 ## Conclusion 
 There is a large number of negative words associated with airline services, in general users are dissatisfied with these LCC, however, the opinion of JetBlue users is worse than that of SouthwestAir.
