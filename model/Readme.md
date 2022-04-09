@@ -51,4 +51,8 @@ We consider the following methods
 ## References
 
 - [Sentiment Analysis: An Introduction to Naive Bayes Algorithm](https://towardsdatascience.com/sentiment-analysis-introduction-to-naive-bayes-algorithm-96831d77ac91)
-- Introduction to Logistic Regression](https://towardsdatascience.com/introduction-to-logistic-regression-66248243c148)
+- [Introduction to Logistic Regression](https://towardsdatascience.com/introduction-to-logistic-regression-66248243c148)
+- [Sentiment Analysis of Twitter Data Using Machine Learning Approaches and Semantic Analysis](file:///C:/Users/valsc/Downloads/16_Sentimentanalysisoftwitterdatausingmachinelearningapproachesandsemanticanalysis.pdf)
+- [Twitter Sentiment Analysis Using Supervised Machine Learning](file:///C:/Users/valsc/Downloads/Twitter_Sentiment_Ana_e.Proofing_Springer_NikhilYadav%20(1).pdf)
+- [Sentiment Analysis of Twitter Data: A Survey of Techniques](https://arxiv.org/ftp/arxiv/papers/1601/1601.06971.pdf)
+- [A Comparative Analysis of Machine Learning Classifiers for Twitter Sentiment Analysis](https://rcs.cic.ipn.mx/2016_110/A%20Comparative%20Analysis%20of%20Machine%20Learning%20Classifiers%20for%20Twitter%20Sentiment%20Analysis.pdf)
