@@ -77,7 +77,7 @@ This intuition can be easiliy extended for more than two categories, by using th
 
 main/model/image/ZOnIK.png
 
-<img src="/image/ZOnIK.png">
+<img src="/model/image/ZOnIK.png">
 
 
 
