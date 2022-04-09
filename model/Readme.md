@@ -43,9 +43,41 @@ We consider the following methods
 
 ## Naive Bayes Algorithm
 
+This model applies Bayes theorem with a Naive assumption of no relationship between different features. According to Bayes theorem:
+Posterior = likelihood * proposition/evidence 
+
+or 
+
+P(A|B) = P(B|A) * P(A)/P(B)
+
+Naive Bayes Model works particularly well with text classification and spam filtering. Advantages of working with NB algorithm are:
+
+* Requires a small amount of training data to learn the parameters
+* Can be trained relatively fast compared to sophisticated models
+
+The main disadvantage of NB Algorithm is:
+
+* It’s a decent classifier but a bad estimator
+* It works well with discrete values but won’t work with continuous values (can’t be used in a regression)
 
 
 ## Logistic Regression
+
+Logistic regression is a classification algorithm used to assign observations to a discrete set of classes.
+
+* Logistic Regression is a Machine Learning algorithm which is used for the classification problems, it is a predictive analysis algorithm and based on the concept of probability. 
+
+* The Logistic Regression uses a more complex cost function than the Linear Regression model, this cost function can be defined as the ‘Sigmoid function’ or also known as the ‘logistic function’.
+
+* One of the main characteristics of logistic regression is that it bound the cost function to be between 0 and 1, which fails to hold under linear functions. 
+
+* To guarantee the cost function to be optimized (global minima), it is defined as a convex combination of the cost function when y = 1 and y = 0. 
+
+This intuition can be easiliy extended for more than two categories, by using the multinomial logistic regression. 
+
+<img src="../image/ZOnIK.png">
+
+
 
 
 ## References
