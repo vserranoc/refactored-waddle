@@ -1,3 +1,19 @@
+# Arquitectura de Producto de Datos
+## Team name: Serverless
+
+### Team members:
+|**Name**|**User**|
+| ------------------ | ------------ |
+|Luis Alberto Valdez Ibarra |@LuisValdez07|
+|Paulina Hernández Trejo|@pautrejo|
+|Jesús Enrique Miranda Blanco |@jesusmb230795|
+|Valeria Serrano Cote |@vserranoc|
+
+### **About team**
+We think that we are an awesome team because we have mutual respect, common and aligned goals, open communication, patience, tolerance, everyone contributes, support each other, we complement each other, has fun, and overall, appreciates and encourages diverse thinking, learning, and adaptation.
+
+# :airplane: :seat: 
+
 # Which american Low Cost Carriers is better for you: Jet Blue or SouthwestAir
 ## Sentiment Analysis in Twitter about american airlines
 
@@ -47,12 +63,22 @@ The following diagram illustrates the points indicated...
 
 
 ### **Model**
+We use traditional models, some of these algorithms were selected because of their scalability. 
+This alternative consists of taking a text sample, processing the piece of information until the model can predict with accuracy the sentiments of the tweet, then the text is the input for the classifier, and it will predict the sentiment as negative, neutral, or positive.
+
+- Naive Bayes
+
+  This probabilistic classifier will help us to learn about the pattern of an examined set of data previously categorized.
+   
+- Logistic regression
+
+  It is a type of regression analysis, which is used to predict the outcome of a categorical variable, in our case sentiment (positive, negative or neutral), based on   the independent or predictor variables, for us this are the words that we obtein from twitter. 
 
 
 ### **Evaluation**
 We evaluate model performance throught:
 
-•	We would review the performance of the model based on different error measures MSE, MAE
+•	We would review the performance of the model based on receiver operating characteristic curve, or ROC curve.
 
 •	During training we would take care of filtering validation data in the training set
 
@@ -68,9 +94,7 @@ If application satisfies objectives: we would identify if the application solves
 
 ### **Inference**
 
-•	We use batch predictions because they increase the speed of the calculation as they are performed on blocks of data and not on each unit, for which we use CPU. 
-
-•	We will need one or two CPU with the capacity to process 1500 tweets, which have words like:~~'travel','booking','hotel','trivago','airbnb','travel agency','travelling','vacation','instatravel','tourism','traveller','trip','journey','tour','tourist'.~~
+•	We will need one or two CPU with the capacity to process 2000 tweets, obtained through the words: @JetBlue and @SouthwestAir
 
 ### **MVP (minimum viable product )**
 
@@ -82,7 +106,7 @@ How difficult is it to get there? :
 
 **Pre-Mortems**
 
-Reasons for the project to fail:
+At first we thought that our limitations would be:
 
 • Lack of time to choose the best model
 
@@ -96,7 +120,7 @@ Reasons for the project to fail:
 
 • There is information about the business that we are not considering
 
-
+However our problem was to establish a problem that was not very specific, the product and the users were not very clear. For this reason we had to rethink the problem, although we kept the idea of using twits, the Nave Bayes and Logistics models and we rescued part of the code used to clean the database.
 
 
 
