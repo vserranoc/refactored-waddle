@@ -78,6 +78,11 @@ This intuition can be easiliy extended for more than two categories, by using th
 
 <img src="/model/image/ZOnIK.png">
 
+## 4. ML metrics
+
+The curve ROC is the graph resulting from representing, for each threshold value, the sensitivity and specificity measurements of the diagnostic test. Sensitivity is the proportion of individuals who present the event of interest and who are classified by the test as carriers of said event. While, the specificity quantifies the proportion of individuals that do not present it and are classified by the test as such. 
+
+We consider the [ROC](https://es.wikipedia.org/wiki/Curva_ROC) curve in each model in order to observe the graph of the ratio or proportion of true positives (VPR = Ratio of True Positives) against the ratio or proportion of false positives (FPR = Ratio of False Positives) also according to the discrimination threshold varies (value from which we decide that a case is positive). In addition, the ROC curve allows us to observe the sensitivity of VPR and FPR when modifying the decision threshold.
 
 
 
@@ -89,3 +94,4 @@ This intuition can be easiliy extended for more than two categories, by using th
 - [Twitter Sentiment Analysis Using Supervised Machine Learning](file:///C:/Users/valsc/Downloads/Twitter_Sentiment_Ana_e.Proofing_Springer_NikhilYadav%20(1).pdf)
 - [Sentiment Analysis of Twitter Data: A Survey of Techniques](https://arxiv.org/ftp/arxiv/papers/1601/1601.06971.pdf)
 - [A Comparative Analysis of Machine Learning Classifiers for Twitter Sentiment Analysis](https://rcs.cic.ipn.mx/2016_110/A%20Comparative%20Analysis%20of%20Machine%20Learning%20Classifiers%20for%20Twitter%20Sentiment%20Analysis.pdf)
+- [Curvas ROC (Receiver-Operating-Characteristic)y sus aplicaciones](https://idus.us.es/bitstream/handle/11441/63201/Valle%20Benavides%20Ana%20Roc%C3%ADo%20del%20TFG.pdf?sequence=1&isAllowed=y)
