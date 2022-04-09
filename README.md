@@ -68,8 +68,8 @@ This alternative consists of taking a text sample, processing the piece of infor
 - Naive Bayes
 
   This probabilistic classifier will help us to learn about the pattern of an examined set of data previously categorized.
-  
--Logistic regression
+   
+- Logistic regression
 
   It is a type of regression analysis, which is used to predict the outcome of a categorical variable, in our case sentiment (positive, negative or neutral), based on   the independent or predictor variables, for us this are the words that we obtein from twitter. 
 
