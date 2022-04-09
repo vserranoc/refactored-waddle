@@ -1,6 +1,6 @@
 # :airplane: :seat: The Models 
 
-# Which airline is better for users?
+# Which airline is better for users or which airline is worse?
 # Description of models
 
 ## 1. Data
