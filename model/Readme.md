@@ -20,7 +20,6 @@ Then, each team member manually tagged 500 tweets into three categories
 * **0** Neutral perception towards the airline
 
 
-We also verify for [Twitterbots](https://es.wikipedia.org/wiki/Twitterbot) by XXXX
 
 ## 2. Feature engineering
 
