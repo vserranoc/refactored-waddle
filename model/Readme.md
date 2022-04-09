@@ -75,7 +75,9 @@ Logistic regression is a classification algorithm used to assign observations to
 
 This intuition can be easiliy extended for more than two categories, by using the multinomial logistic regression. 
 
-<img src="model/image/ZOnIK.png">
+main/model/image/ZOnIK.png
+
+<img src="/image/ZOnIK.png">
 
 
 
