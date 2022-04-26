@@ -50,6 +50,8 @@ The use of punctuation marks is scarce, probably because they are written in Eng
 
 Detailed description at **[EDA](https://github.com/vserranoc/refactored-waddle/blob/main/model/EDA.ipynb)
 
+<img src="/model/image/sentimiento.jpeg">
+
 ## 3. Algorithm
 
 We consider the following methods
@@ -104,8 +106,6 @@ Detailed description at [Model](https://github.com/vserranoc/refactored-waddle/b
 ## Conclusion 
 There is a large number of negative words associated with airline services, in general users are dissatisfied with these LCC, however, the opinion of JetBlue users is worse than that of SouthwestAir.
 The model used with the Naive Bayes method seems to be better for this exercise.
-
-<img src="/model/image/sentimiento.jpeg">
 
 
 ## References
