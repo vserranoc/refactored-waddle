@@ -5,7 +5,8 @@
 
 ## 1. Data
 
-We extract 1,000 tweets mentioning @JetBlue and 1,000 mentioning @SouthwestAir from the [Twitter API](https://developer.twitter.com/en) for a day on march 2022.  We filter out retweets during this part of the process.
+We extract 6404 tweets mentioning @JetBlue and  @SouthwestAir from the [Twitter API](https://developer.twitter.com/en) for a day on march 2022.  We filter out retweets during this part of the process. After removing duplicates and cleaning the database we create a dataset with 2712 tweets, of which 2009 are negative and 703 are positive. 
+
 During extraction we define the following variables: 
 
 * **user** : Twitter user account originating the tweet
@@ -14,15 +15,10 @@ During extraction we define the following variables:
 * **location** :  Geographic location from the given user
 * **verified** :  Indicator equal 1 if the account has this condition
 
-Then, each team member manually tagged 500 tweets into three categories
+Then,  team member manually tagged tweets into two categories:
 
 * **1** Positive perception towards the airline
-* **-1** Negative perception towards the airline
-* **0** Neutral perception towards the airline
-
-Detailed description at [EDA](https://github.com/vserranoc/refactored-waddle/blob/main/model/EDA.ipynb)
-
-## 2. Feature engineering
+* **0** Negative perception towards the airline
 
 We clean the tweets by:
 
@@ -35,6 +31,24 @@ We clean the tweets by:
 - [x] Remove non-English tweets
 - [x] Remove stop words
 - [x] Remove hastags (#)
+
+
+## 2. Feature engineering
+
+  Word count
+
+We found that tweets with an extension of less than 40 words predominate. Those who manifest in a negative way commonly use more words than positive manifestations. We look at two sets of tweets, those with a median of 20 words and a maximum of 40 words, and those with a median of 50 words and a maximum of 60. The first set is larger in magnitude than the second.
+
+  Word density
+
+When measuring the density of tweets, that is, the number of words per total number of characters, we find that the words written in the tweets are usually short, even the words used in the positive tweets are shorter than those used in the tweets. negatives. The length of the words used in the tweets may be associated with the abbreviations that are commonly used in the tweets and with the time spent writing tweets.
+
+  Score count
+
+The analyzed tweets use few punctuation marks. The highest frequency of these signs goes from 1 to 5, while with less frequency we have tweets with more than 20 punctuation marks.
+The use of punctuation marks is scarce, probably because they are written in English, a language where accents, for example, are not used.
+
+Detailed description at **[EDA](https://github.com/vserranoc/refactored-waddle/blob/main/model/EDA.ipynb)
 
 ## 3. Algorithm
 
