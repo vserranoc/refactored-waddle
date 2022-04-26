@@ -54,8 +54,25 @@ Detailed description at **[EDA](https://github.com/vserranoc/refactored-waddle/b
 
 ## 3. Algorithm
 
+Prior to modeling, we generate a Sparse Matrix, which is built from vectorizing the frequency of the unique words that we have in the entire core. In other words, a dictionary of unique words is generated, from which a matrix is built that only contains numbers, which in turn correspond to the frequency of each word in each of the tweets. To build this matrix automatically, we use CountVectorizer, which is a tool provided by the scikit-learn library in Python. More about it [here](https://www.geeksforgeeks.org/using-countvectorizer-to-extracting-features-from-text/#:~:text=CountVectorizer%20is%20a%20great%20tool,occurs%20in%20the%20entire%20text).
+
 We consider the following methods
 
+## Logistic Regression
+
+Logistic regression is a classification algorithm used to assign observations to a discrete set of classes.
+
+* Logistic Regression is a Machine Learning algorithm which is used for the classification problems, it is a predictive analysis algorithm and based on the concept of probability. 
+
+* The Logistic Regression uses a more complex cost function than the Linear Regression model, this cost function can be defined as the ‘Sigmoid function’ or also known as the ‘logistic function’.
+
+* One of the main characteristics of logistic regression is that it bound the cost function to be between 0 and 1, which fails to hold under linear functions. 
+
+* To guarantee the cost function to be optimized (global minima), it is defined as a convex combination of the cost function when y = 1 and y = 0. 
+
+This intuition can be easiliy extended for more than two categories, by using the multinomial logistic regression. 
+
+<img src="/model/image/ZOnIK.png">
 
 ## Naive Bayes Algorithm
 
@@ -78,21 +95,7 @@ The main disadvantage of NB Algorithm is:
 
 See more at [Sentiment Analysis: An Introduction to Naive Bayes Algorithm](https://towardsdatascience.com/sentiment-analysis-introduction-to-naive-bayes-algorithm-96831d77ac91)
 
-## Logistic Regression
 
-Logistic regression is a classification algorithm used to assign observations to a discrete set of classes.
-
-* Logistic Regression is a Machine Learning algorithm which is used for the classification problems, it is a predictive analysis algorithm and based on the concept of probability. 
-
-* The Logistic Regression uses a more complex cost function than the Linear Regression model, this cost function can be defined as the ‘Sigmoid function’ or also known as the ‘logistic function’.
-
-* One of the main characteristics of logistic regression is that it bound the cost function to be between 0 and 1, which fails to hold under linear functions. 
-
-* To guarantee the cost function to be optimized (global minima), it is defined as a convex combination of the cost function when y = 1 and y = 0. 
-
-This intuition can be easiliy extended for more than two categories, by using the multinomial logistic regression. 
-
-<img src="/model/image/ZOnIK.png">
 
 ## 4. ML metrics
 
