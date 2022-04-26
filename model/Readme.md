@@ -50,13 +50,16 @@ The use of punctuation marks is scarce, probably because they are written in Eng
 
 Detailed description at **[EDA](https://github.com/vserranoc/refactored-waddle/blob/main/model/EDA.ipynb)
 
-<img src="/model/image/sentimiento.jpeg">
+#<img src="/model/image/sentimiento.jpeg">
 
 ## 3. Algorithm
 
 Prior to modeling, we generate a Sparse Matrix, which is built from vectorizing the frequency of the unique words that we have in the entire core. In other words, a dictionary of unique words is generated, from which a matrix is built that only contains numbers, which in turn correspond to the frequency of each word in each of the tweets. To build this matrix automatically, we use CountVectorizer, which is a tool provided by the scikit-learn library in Python. More about it [here](https://www.geeksforgeeks.org/using-countvectorizer-to-extracting-features-from-text/#:~:text=CountVectorizer%20is%20a%20great%20tool,occurs%20in%20the%20entire%20text).
 
-We consider the following methods
+As part of the preprocessing, we generate a word weight that gives stopwords such as the, you, of, will, etc. a lower weight. For this we use a tf-idf , which allows us to calculate the weight of the words according to their frequency and apply the inverse of this. Thus, the rarest words will receive the highest weight. The Python tool used to do this is [tfidf](https://www.freecodecamp.org/news/how-to-process-textual-data-using-tf-idf-in-python-cd2bbc0a94a3/).
+
+
+We consider the following methods:
 
 ## Logistic Regression
 
