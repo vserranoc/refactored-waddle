@@ -103,14 +103,28 @@ See more at [Sentiment Analysis: An Introduction to Naive Bayes Algorithm](https
 
 ## 5. ML metrics
 
+In order to evaluate the performance of each of the models, we used the metrics: recall, accuracy, F1_ score, and AUC.
+
+Recall. This metric allows us to observe the number of positives correctly identified by the model. In the confusion matrix, the recall is the ratio of true positives vs. the sum of true positives and false negatives.
+
+Accuracy. Accuracy is one metric for evaluating classification models. It gives us the proportion of predictions our model got right. In other words, accuracy is the ratio: number of correct predictions/total number of predictions. Or, (True Positives + True Negatives)/ (True Positives + True Negatives + False Positives + False Negatives).
+
+The F1 score. It is the combination of Precision and Recall, its goal is “combine the precision and recall metrics into a single metric. At the same time, the F1 score has been designed to work well on imbalanced data”. When F! is high, both Precision and Recall are high. For its part, what a low indicates is that both Precision and Recall are low. Finally, if a model has a medium F1 score, it implies that Precision or Recall is low and the other is high. More about [here](https://towardsdatascience.com/the-f1-score-bec2bbc38aa6).
+
+AUC. This metric measures the area under the ROC curve.
 The curve ROC is the graph resulting from representing, for each threshold value, the sensitivity and specificity measurements of the diagnostic test. Sensitivity is the proportion of individuals who present the event of interest and who are classified by the test as carriers of said event. While, the specificity quantifies the proportion of individuals that do not present it and are classified by the test as such. 
 
 We consider the [ROC](https://es.wikipedia.org/wiki/Curva_ROC) curve in each model in order to observe the graph of the ratio or proportion of true positives (VPR = Ratio of True Positives) against the ratio or proportion of false positives (FPR = Ratio of False Positives) also according to the discrimination threshold varies (value from which we decide that a case is positive). In addition, the ROC curve allows us to observe the sensitivity of VPR and FPR when modifying the decision threshold.
+More about this metric here: https://arize.com/blog/what-is-auc/
 
-Detailed description at [Model](https://github.com/vserranoc/refactored-waddle/blob/main/model/sentiment_training.ipynb)
+
+## 6. Results 
 
 
-## 6. Conclusion 
+Detailed description at [Model](https://github.com/vserranoc/refactored-waddle/blob/main/model/modelling.ipynb)
+
+
+## 7. Conclusion 
 There is a large number of negative words associated with airline services, in general users are dissatisfied with these LCC, however, the opinion of JetBlue users is worse than that of SouthwestAir.
 The model used with the Naive Bayes method seems to be better for this exercise.
 
