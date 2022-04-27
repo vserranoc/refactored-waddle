@@ -1,10 +1,9 @@
 # DAG description
 ## ELT
 
-DAG used to extract tweets using **tweepy** from Twitter API and load them into BigQuery. Consists of 3 tasks:
--  Task1: Install tweepy
--  Task2: Extract JetBlue tweets to BQ
--  Task3: Extract SouthwestAir tweets to BQ
+DAG used to extract tweets using **tweepy** from Twitter API and load them into BigQuery. Consists of 2 tasks (so far):
+-  Task1: Extract JetBlue tweets to BQ
+-  Task2: Extract SouthwestAir tweets to BQ
 
 BigQuery:
 - [JetBlue tweets](https://console.cloud.google.com/bigquery?hl=es&project=refactored-waddle&ws=!1m5!1m4!4m3!1srefactored-waddle!2stweets_extraction!3sJetBlue)
