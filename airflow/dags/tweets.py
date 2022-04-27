@@ -80,7 +80,7 @@ def get_write_tweets(bearer,project_id,database,table,search):
 	credentials = service_account.Credentials.from_service_account_info()
 	client = bigquery.Client(project=project_id,credentials=credentials)
 	destination = database + '.' +table
-	pandas_gbq.to_gbq(df,destination_table = destination,project_id = project_id,credentials=credentials,if_exists='replace')
+	pandas_gbq.to_gbq(df,destination_table = destination,project_id = project_id,credentials=credentials,if_exists='append')
 
 #get_write_tweets('refactored_waddle','tweets','JetBlue','JetBlue')
 #get_write_tweets('refactored_waddle','tweets','SouthwestAir','SouthwestAir')
