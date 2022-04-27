@@ -1,16 +1,15 @@
+from bs4 import BeautifulSoup
 import re
-import nltk
-nltk.download('stopwords')
-from nltk.corpus import stopwords
-from nltk.stem import PorterStemmer
+from emot.emo_unicode import UNICODE_EMOJI
 
+def clean_tweet(x):
+    clean_x = BeautifulSoup(x,features='html.parser').get_text()
+    clean_x = ' '.join(re.sub("(@[A-Za-z0-9]+)|(#[A-Za-z0-9]+)", " ", clean_x).split())
+    clean_x = ' '.join(re.sub("(\w+:\/\/\S+)", " ", clean_x).split())
+    clean_x = ' '.join(re.sub("[\.\,\!\?\:\;\-\=]", " ", clean_x).split())
+    clean_x = clean_x.lower()
 
-stop_words=stopwords.words('english')
-stemmer=PorterStemmer()
+    for emot in UNICODE_EMOJI:
+        clean_x = clean_x.replace(emot, "_".join(UNICODE_EMOJI[emot].replace(",","").replace(":","").split()))
 
-def clean_tweets(string):
-    clean = re.sub('[^a-zA-Z]',' ',string.lower())
-    clean = clean.split()
-    clean= [stemmer.stem(word) for word in clean if (word not in stop_words)]
-    clean = ' '.join(clean)
-    return clean
+    return clean_x
