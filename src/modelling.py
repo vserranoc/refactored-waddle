@@ -15,6 +15,7 @@ def model_in_folds(model_selected, model_name, trainset, preprocessing='CountVec
     f1_scores = []
     folds = []
     aucs = []
+    briers=[]
     for fold_ in range(5):
         train_df = trainset[trainset.kfold != fold_].reset_index(drop=True)
 
@@ -56,12 +57,14 @@ def model_in_folds(model_selected, model_name, trainset, preprocessing='CountVec
         recall = metrics.recall_score(test_df.sentiment, preds)
         f1_score = metrics.f1_score(test_df.sentiment, preds)
         auc = metrics.roc_auc_score(test_df.sentiment, proba)
+        brier = metrics.brier_score_loss(test_df.sentiment, proba)
         
         accuracies.append(accuracy)
         recalls.append(recall)
         f1_scores.append(f1_score)
         folds.append(fold_)
         aucs.append(auc)
+        briers.append(brier)
             
     df_results = pd.DataFrame(
         {
@@ -69,7 +72,8 @@ def model_in_folds(model_selected, model_name, trainset, preprocessing='CountVec
             'recall':recalls,
             'accuracy':accuracies,
             'f1_score':f1_scores,
-            'auc':aucs
+            'auc':aucs,
+            'brier':briers
         }
     )
     
