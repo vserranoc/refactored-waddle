@@ -7,13 +7,7 @@
 
 We extract 6404 tweets mentioning @JetBlue and  @SouthwestAir from the [Twitter API](https://developer.twitter.com/en) for a day on march 2022.  We filter out retweets during this part of the process. After removing duplicates and cleaning the database we create a dataset with 2712 tweets, of which 2009 are negative and 703 are positive. 
 
-During extraction we define the following variables: 
-
-* **user** : Twitter user account originating the tweet
-* **text** :  Full text content in each tweet
-* **followers** :  Number of user accounts that follow the given user
-* **location** :  Geographic location from the given user
-* **verified** :  Indicator equal 1 if the account has this condition
+During extraction we define the following variables: user (Twitter user account originating the tweet), text (Full text content in each tweet), followers (Number of user accounts that follow the given user), location (Geographic location from the given user), verified (Indicator equal 1 if the account has this condition).
 
 Then,  team member manually tagged tweets into two categories:
 
@@ -34,28 +28,21 @@ We clean the tweets by:
 
 ## 2. Feature engineering
 
-  Word count
+  Word count. We found that tweets with an extension of less than 40 words predominate. Those who manifest in a negative way commonly use more words than positive manifestations. We look at two sets of tweets, those with a median of 20 words and a maximum of 40 words, and those with a median of 50 words and a maximum of 60. The first set is larger in magnitude than the second.
 
-We found that tweets with an extension of less than 40 words predominate. Those who manifest in a negative way commonly use more words than positive manifestations. We look at two sets of tweets, those with a median of 20 words and a maximum of 40 words, and those with a median of 50 words and a maximum of 60. The first set is larger in magnitude than the second.
+  Word density. When measuring the density of tweets, that is, the number of words per total number of characters, we find that the words written in the tweets are usually short, even the words used in the positive tweets are shorter than those used in the tweets. negatives. The length of the words used in the tweets may be associated with the abbreviations that are commonly used in the tweets and with the time spent writing tweets.
 
-  Word density
-
-When measuring the density of tweets, that is, the number of words per total number of characters, we find that the words written in the tweets are usually short, even the words used in the positive tweets are shorter than those used in the tweets. negatives. The length of the words used in the tweets may be associated with the abbreviations that are commonly used in the tweets and with the time spent writing tweets.
-
-  Score count
-
-The analyzed tweets use few punctuation marks. The highest frequency of these signs goes from 1 to 5, while with less frequency we have tweets with more than 20 punctuation marks.
+  Score count. The analyzed tweets use few punctuation marks. The highest frequency of these signs goes from 1 to 5, while with less frequency we have tweets with more than 20 punctuation marks.
 The use of punctuation marks is scarce, probably because they are written in English, a language where accents, for example, are not used.
 
-Detailed description at **[EDA](https://github.com/vserranoc/refactored-waddle/blob/main/model/EDA.ipynb)
+Detailed description at [EDA.ipynb](https://github.com/vserranoc/refactored-waddle/blob/main/model/EDA.ipynb)
 
 
 ## 3. Preprocessing
 
-Prior to modeling, we generate a Sparse Matrix, which is built from vectorizing the frequency of the unique words that we have in the entire core. In other words, a dictionary of unique words is generated, from which a matrix is built that only contains numbers, which in turn correspond to the frequency of each word in each of the tweets. To build this matrix automatically, we use CountVectorizer, which is a tool provided by the scikit-learn library in Python. More about it [here](https://www.geeksforgeeks.org/using-countvectorizer-to-extracting-features-from-text/#:~:text=CountVectorizer%20is%20a%20great%20tool,occurs%20in%20the%20entire%20text).
+Prior to modeling, we generate a Sparse Matrix, which is built from vectorizing the frequency of the unique words that we have in the entire core. In other words, a dictionary of unique words is generated, from which a matrix is built that only contains numbers, which in turn correspond to the frequency of each word in each of the tweets. To build this matrix automatically, we use CountVectorizer, which is a tool provided by the scikit-learn library in Python. 
 
-As part of the preprocessing, we generate a word weight that gives stopwords such as the, you, of, will, etc. a lower weight. For this we use a tf-idf, which allows us to calculate the weight of the words according to their frequency and apply the inverse of this. Thus, the rarest words will receive the highest weight. The Python tool used to do this is [tfidf](https://www.freecodecamp.org/news/how-to-process-textual-data-using-tf-idf-in-python-cd2bbc0a94a3/).
-
+As part of the preprocessing, we generate a word weight that gives stopwords such as the, you, of, will, etc. a lower weight. For this we use a tf-idf, which allows us to calculate the weight of the words according to their frequency and apply the inverse of this. Thus, the rarest words will receive the highest weight. 
 
 We consider the following methods: Logistic regression and Nave Bayes Algorithm, each with two options: *CountVec* and *tfidf*. The first is about t convert a collection of text documents to a matrix of token counts, while the second gives weight to the words determined by the inverse of the frequency of their appearance in the corpus.
 
@@ -63,17 +50,9 @@ We consider the following methods: Logistic regression and Nave Bayes Algorithm,
 
 ### Logistic Regression
 
-Logistic regression is a classification algorithm used to assign observations to a discrete set of classes.
+Logistic regression is a classification algorithm used to assign observations to a discrete set of classes. Further, logistic regression is a Machine Learning algorithm which is used for the classification problems, it is a predictive analysis algorithm and based on the concept of probability. It uses a more complex cost function than the Linear Regression model, this cost function can be defined as the ‘Sigmoid function’ or also known as the ‘logistic function’.
 
-* Logistic Regression is a Machine Learning algorithm which is used for the classification problems, it is a predictive analysis algorithm and based on the concept of probability. 
-
-* The Logistic Regression uses a more complex cost function than the Linear Regression model, this cost function can be defined as the ‘Sigmoid function’ or also known as the ‘logistic function’.
-
-* One of the main characteristics of logistic regression is that it bound the cost function to be between 0 and 1, which fails to hold under linear functions. 
-
-* To guarantee the cost function to be optimized (global minima), it is defined as a convex combination of the cost function when y = 1 and y = 0. 
-
-This intuition can be easiliy extended for more than two categories, by using the multinomial logistic regression. 
+* One of the main characteristics of logistic regression is that it bound the cost function to be between 0 and 1, which fails to hold under linear functions. To guarantee the cost function to be optimized (global minima), it is defined as a convex combination of the cost function when y = 1 and y = 0. This intuition can be easiliy extended for more than two categories, by using the multinomial logistic regression. 
 
 <img src="/model/image/ZOnIK.png">
 
@@ -104,30 +83,28 @@ See more at [Sentiment Analysis: An Introduction to Naive Bayes Algorithm](https
 
 In order to evaluate the performance of each of the models, we used the metrics: recall, accuracy, F1_ score, and AUC.
 
-Recall. This metric allows us to observe the number of positives correctly identified by the model. In the confusion matrix, the recall is the ratio of true positives vs. the sum of true positives and false negatives.
+**Recall**. This metric allows us to observe the number of positives correctly identified by the model. In the confusion matrix, the recall is the ratio of true positives vs. the sum of true positives and false negatives.
 
-Accuracy. Accuracy is one metric for evaluating classification models. It gives us the proportion of predictions our model got right. In other words, accuracy is the ratio: number of correct predictions/total number of predictions. Or, (True Positives + True Negatives)/ (True Positives + True Negatives + False Positives + False Negatives).
+**Accuracy**. Accuracy is one metric for evaluating classification models. It gives us the proportion of predictions our model got right. In other words, accuracy is the ratio: number of correct predictions/total number of predictions. Or, (True Positives + True Negatives)/ (True Positives + True Negatives + False Positives + False Negatives).
 
-The F1 score. It is the combination of Precision and Recall, its goal is “combine the precision and recall metrics into a single metric. At the same time, the F1 score has been designed to work well on imbalanced data”. When F! is high, both Precision and Recall are high. For its part, what a low indicates is that both Precision and Recall are low. Finally, if a model has a medium F1 score, it implies that Precision or Recall is low and the other is high. More about [here](https://towardsdatascience.com/the-f1-score-bec2bbc38aa6).
+**The F1 score**. It is the combination of Precision and Recall, its goal is “combine the precision and recall metrics into a single metric. At the same time, the F1 score has been designed to work well on imbalanced data”. When F! is high, both Precision and Recall are high. For its part, what a low indicates is that both Precision and Recall are low. Finally, if a model has a medium F1 score, it implies that Precision or Recall is low and the other is high. More about [here](https://towardsdatascience.com/the-f1-score-bec2bbc38aa6).
 
-AUC. This metric measures the area under the ROC curve.
+**AUC**. This metric measures the area under the ROC curve.
 The curve ROC is the graph resulting from representing, for each threshold value, the sensitivity and specificity measurements of the diagnostic test. Sensitivity is the proportion of individuals who present the event of interest and who are classified by the test as carriers of said event. While, the specificity quantifies the proportion of individuals that do not present it and are classified by the test as such. 
 
-We consider the [ROC](https://es.wikipedia.org/wiki/Curva_ROC) curve in each model in order to observe the graph of the ratio or proportion of true positives (VPR = Ratio of True Positives) against the ratio or proportion of false positives (FPR = Ratio of False Positives) also according to the discrimination threshold varies (value from which we decide that a case is positive). In addition, the ROC curve allows us to observe the sensitivity of VPR and FPR when modifying the decision threshold.
-More about this metric [here](https://arize.com/blog/what-is-auc/)
+### Model comparison
 
 ![image](https://user-images.githubusercontent.com/66652832/165910915-3715b92c-0ccd-46d8-9b07-8835407a66d9.png)
 
 
-## 6. Results 
+![image](https://user-images.githubusercontent.com/66652832/165919707-8c83010e-c93e-4671-9190-1da297a973b3.png)
+
+Detailed description at [modelling.ipynb](https://github.com/vserranoc/refactored-waddle/blob/main/model/modelling.ipynb)
 
 
-Detailed description at [Model](https://github.com/vserranoc/refactored-waddle/blob/main/model/modelling.ipynb)
-
-
-## 7. Conclusion 
+## 6. Conclusion 
 There is a large number of negative words associated with airline services, in general users are dissatisfied with these LCC, however, the opinion of JetBlue users is worse than that of SouthwestAir.
-The model used with the Naive Bayes method seems to be better for this exercise.
+Logistic regression with CountVec is the model which seems to be better for this exercise, after to analyse the metrics such as recall, auc, accuracy and f1 score.
 
 
 ## References
@@ -139,3 +116,6 @@ The model used with the Naive Bayes method seems to be better for this exercise.
 - [Sentiment Analysis of Twitter Data: A Survey of Techniques](https://arxiv.org/ftp/arxiv/papers/1601/1601.06971.pdf)
 - [A Comparative Analysis of Machine Learning Classifiers for Twitter Sentiment Analysis](https://rcs.cic.ipn.mx/2016_110/A%20Comparative%20Analysis%20of%20Machine%20Learning%20Classifiers%20for%20Twitter%20Sentiment%20Analysis.pdf)
 - [Curvas ROC (Receiver-Operating-Characteristic)y sus aplicaciones](https://idus.us.es/bitstream/handle/11441/63201/Valle%20Benavides%20Ana%20Roc%C3%ADo%20del%20TFG.pdf?sequence=1&isAllowed=y)
+- [CountVectorizer](https://arize.com/blog/what-is-auc/)
+- [tfidf](https://www.freecodecamp.org/news/how-to-process-textual-data-using-tf-idf-in-python-cd2bbc0a94a3/).
+
