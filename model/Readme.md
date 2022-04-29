@@ -4,8 +4,7 @@
 # Description of models
 
 
-![image](https://user-images.githubusercontent.com/66652832/165938240-ca37d9e0-1979-46f7-bf2d-d19f49fcf041.png)
-
+![image](https://user-images.githubusercontent.com/66652832/165940463-f74da534-19c2-4c4f-94fd-68caa9c408c5.png)
 
 
 ## 1. Data
