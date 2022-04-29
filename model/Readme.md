@@ -3,6 +3,11 @@
 # Which airline is better for users or which airline is worse?
 # Description of models
 
+
+{"type":"excalidraw/clipboard","elements":[{"type":"rectangle","version":521,"versionNonce":840762736,"isDeleted":false,"id":"k9ArGMtQvSo02GdXLjICp","fillStyle":"solid","strokeWidth":2,"strokeStyle":"solid","roughness":0,"opacity":100,"angle":0,"x":-1780,"y":-40,"strokeColor":"#000000","backgroundColor":"#f5f5f5","width":4080,"height":1100,"seed":2058156944,"groupIds":[],"strokeSharpness":"sharp","boundElements":[],"updated":1651232349394}],"files":{}}
+
+
+
 ## 1. Data
 
 We extract 6404 tweets mentioning @JetBlue and  @SouthwestAir from the [Twitter API](https://developer.twitter.com/en) for a day on march 2022.  We filter out retweets during this part of the process. After removing duplicates and cleaning the database we create a dataset with 2712 tweets, of which 2009 are negative and 703 are positive. 
