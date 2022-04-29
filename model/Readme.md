@@ -4,7 +4,7 @@
 # Description of models
 
 
-{"type":"excalidraw/clipboard","elements":[{"type":"rectangle","version":521,"versionNonce":840762736,"isDeleted":false,"id":"k9ArGMtQvSo02GdXLjICp","fillStyle":"solid","strokeWidth":2,"strokeStyle":"solid","roughness":0,"opacity":100,"angle":0,"x":-1780,"y":-40,"strokeColor":"#000000","backgroundColor":"#f5f5f5","width":4080,"height":1100,"seed":2058156944,"groupIds":[],"strokeSharpness":"sharp","boundElements":[],"updated":1651232349394}],"files":{}}
+![image](https://user-images.githubusercontent.com/66652832/165938240-ca37d9e0-1979-46f7-bf2d-d19f49fcf041.png)
 
 
 
