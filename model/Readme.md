@@ -29,7 +29,6 @@ We clean the tweets by:
 - [x] Trim blank spaces
 - [x] Remove punctuations, symbols and numbers
 - [x] Remove non-English tweets
-- [x] Remove stop words
 - [x] Remove hastags (#)
 
 
@@ -58,7 +57,7 @@ Prior to modeling, we generate a Sparse Matrix, which is built from vectorizing 
 As part of the preprocessing, we generate a word weight that gives stopwords such as the, you, of, will, etc. a lower weight. For this we use a tf-idf, which allows us to calculate the weight of the words according to their frequency and apply the inverse of this. Thus, the rarest words will receive the highest weight. The Python tool used to do this is [tfidf](https://www.freecodecamp.org/news/how-to-process-textual-data-using-tf-idf-in-python-cd2bbc0a94a3/).
 
 
-We consider the following methods:
+We consider the following methods: Logistic regression and Nave Bayes Algorithm, each with two options: *CountVec* and *tfidf*. The first is about t convert a collection of text documents to a matrix of token counts, while the second gives weight to the words determined by the inverse of the frequency of their appearance in the corpus.
 
 ## 4. Algorithm
 
@@ -116,6 +115,8 @@ The curve ROC is the graph resulting from representing, for each threshold value
 
 We consider the [ROC](https://es.wikipedia.org/wiki/Curva_ROC) curve in each model in order to observe the graph of the ratio or proportion of true positives (VPR = Ratio of True Positives) against the ratio or proportion of false positives (FPR = Ratio of False Positives) also according to the discrimination threshold varies (value from which we decide that a case is positive). In addition, the ROC curve allows us to observe the sensitivity of VPR and FPR when modifying the decision threshold.
 More about this metric [here](https://arize.com/blog/what-is-auc/)
+
+![image](https://user-images.githubusercontent.com/66652832/165910915-3715b92c-0ccd-46d8-9b07-8835407a66d9.png)
 
 
 ## 6. Results 
