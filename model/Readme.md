@@ -97,7 +97,7 @@ The curve ROC is the graph resulting from representing, for each threshold value
 ![image](https://user-images.githubusercontent.com/66652832/165910915-3715b92c-0ccd-46d8-9b07-8835407a66d9.png)
 
 
-![image](https://user-images.githubusercontent.com/66652832/165919707-8c83010e-c93e-4671-9190-1da297a973b3.png)
+![image](https://user-images.githubusercontent.com/66652832/165926475-79e37492-4f74-4dcf-aef4-ffc1dcfbfda3.png)
 
 Detailed description at [modelling.ipynb](https://github.com/vserranoc/refactored-waddle/blob/main/model/modelling.ipynb)
 
