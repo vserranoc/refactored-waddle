@@ -17,6 +17,29 @@ DAG used to combine manual labeling in Google Sheets with tweets extraction usin
 -  Task5: Upload train set back to Google Sheets for labeling.
 [train set in Google Sheets](https://docs.google.com/spreadsheets/d/1x7g65pMlxbpwqACzdsbXW4_PiCbHJVCZ0C_1ln4i-Z8/edit#gid=0)
 
+The following image shows evidence of these tasks:
+
+
+
+## DAG MLOPs
+
+This DAG loads the previous task, cleans the data, vectorizes the core, runs the model and finally obtains the scoring. The tasks are distributed in 3 tasks:
+
+-  Task 1. Generates Alert when the DAG ELT has been completed
+
+-  Task 2. Clean the data:
+
+        Transform the data: generate sparse matrix
+        
+        Run the logistic regression model:
+        
+        Calculate the evaluation metrics:
+
+-  Task 3. Save the sentiment prediction
+
+The following image shows evidence of these tasks:
+
+
 
 References
 
