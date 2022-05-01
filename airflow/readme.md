@@ -26,17 +26,11 @@ DAG used to combine manual labeling in Google Sheets with tweets extraction usin
 
 This DAG loads the previous task, cleans the data, vectorizes the core, runs the model and finally obtains the scoring. The tasks are distributed in 3 tasks:
 
--  Task 1. Generates Alert when the DAG ELT has been completed
+-  Task 1. Generates alert when the DAG ELT has been completed
 
--  Task 2. Clean the data:
+-  Task 2. Scoring: Clean the data, Transform the data (generate sparse matrix), Classification model, Calculate the evaluation metrics
 
-        Transform the data: generate sparse matrix
-        
-        Run the logistic regression model:
-        
-        Calculate the evaluation metrics:
-
--  Task 3. Save the sentiment prediction
+-  Task 3. Persistence.
 
 The following image shows evidence of these tasks:
 
