@@ -60,7 +60,7 @@ task3 = PythonOperator(
     task_id = 'task3',
     provide_context = True,
     python_callable = modelling,
-    op_kwargs = {'vms-2022': params['vms-2022'],'path': params['dags/'],
+    op_kwargs = {'bucket': params['bucket'],'path': params['folder'],
     }
 )
 
