@@ -38,7 +38,7 @@ dag = DAG(
 task1 = ExternalTaskSensor(
     dag = dag,
     task_id = 'extract_task_sensor',
-    external_dag_id = 'dags_dag',
+    external_dag_id = 'extraction',
     external_task_id = 'task5'
 )
 # Task 2: Run Model
