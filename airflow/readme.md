@@ -37,7 +37,7 @@ This DAG loads the previous task, cleans the data, vectorizes the core, runs the
   - Scoring sentiment
   - Save scoring in big query
 
-![image](https://user-images.githubusercontent.com/66652832/166186294-31926482-713c-457f-a450-62bcd042128b.png)
+![image](https://user-images.githubusercontent.com/66652832/166336074-5483e09a-8e0d-4d68-b4b8-2034cb1fb156.png)
 
 
 
