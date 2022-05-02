@@ -3,7 +3,7 @@
 In this section we describe the process to execute the DAGs (Directed Acyclic Graph), which are the core concept of Airflow. This collecting tasks together, organized with dependencies and relationships to say how they should run.
 
 
-![image](https://user-images.githubusercontent.com/66652832/166189032-dfb34805-fe72-4848-99b5-987e80980cf3.png)
+![image](https://user-images.githubusercontent.com/66652832/166189712-b0000add-c5d0-4c45-aa69-cc9ba3912b0b.png)
 
 
 ## DAG ELT
