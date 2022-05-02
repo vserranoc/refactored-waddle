@@ -21,7 +21,7 @@ DAG used to combine manual labeling in Google Sheets with tweets extraction usin
 -  Task5: Upload train set back to Google Sheets for labeling.
 [train set in Google Sheets](https://docs.google.com/spreadsheets/d/1x7g65pMlxbpwqACzdsbXW4_PiCbHJVCZ0C_1ln4i-Z8/edit#gid=0)
 
-![image](https://user-images.githubusercontent.com/66652832/166150178-96c5d689-d99f-427d-b855-12a0c84f888a.png)
+![image](https://user-images.githubusercontent.com/66652832/166336146-7f48ca55-7f54-49ba-b701-a6ce20ffb1d5.png)
 
 ## DAG MLOPs
 
