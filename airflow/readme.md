@@ -19,22 +19,22 @@ DAG used to combine manual labeling in Google Sheets with tweets extraction usin
 
 ![image](https://user-images.githubusercontent.com/66652832/166150178-96c5d689-d99f-427d-b855-12a0c84f888a.png)
 
-
-
-
 ## DAG MLOPs
 
 This DAG loads the previous task, cleans the data, vectorizes the core, runs the model and finally obtains the scoring. The tasks are distributed in 3 tasks:
 
--  Task 1. Generates alert when the DAG ELT has been completed
+- Task 1. Generates alert when the DAG ELT has been completed
 
--  Task 2. Scoring: Clean the data, Transform the data (generate sparse matrix), Classification model, Calculate the evaluation metrics
+- Task 2. Scoring:
+  - Load data
+  - Load artifacts
+  - Clean data
+  - Transform the data (generate sparse matrix)
+  - Scoring sentiment
+  - Save scoring in big query
 
--  Task 3. Persistence.
+- Task 3. Persistence in database.
 
 The following image shows evidence of these tasks:
 
-
-
 References
-
