@@ -2,6 +2,10 @@
 
 In this section we describe the process to execute the DAGs (Directed Acyclic Graph), which are the core concept of Airflow. This collecting tasks together, organized with dependencies and relationships to say how they should run.
 
+
+![image](https://user-images.githubusercontent.com/66652832/166189032-dfb34805-fe72-4848-99b5-987e80980cf3.png)
+
+
 ## DAG ELT
 
 DAG used to combine manual labeling in Google Sheets with tweets extraction using **tweepy** from Twitter API to finally upload the result into BigQuery and back to Google Sheets. Consists of 5 tasks:
