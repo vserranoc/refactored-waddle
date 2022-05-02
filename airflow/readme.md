@@ -33,8 +33,7 @@ This DAG loads the previous task, cleans the data, vectorizes the core, runs the
   - Scoring sentiment
   - Save scoring in big query
 
-- Task 3. Persistence in database.
+![image](https://user-images.githubusercontent.com/66652832/166186294-31926482-713c-457f-a450-62bcd042128b.png)
 
-The following image shows evidence of these tasks:
 
-References
+
