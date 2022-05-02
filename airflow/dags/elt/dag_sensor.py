@@ -1,4 +1,4 @@
-"""DAG Model"""
+""""DAG Model"""
 
 from airflow import DAG
 from airflow.contrib.operators.bigquery_operator import BigQueryOperator
@@ -7,7 +7,7 @@ from airflow.operators.bash import BashOperator
 from airflow.operators.python import PythonOperator
 from airflow.utils.dates import days_ago
 from airflow.models import Variable
-from dags.modelling import modelling
+from artifacts.scoring import scoring
 from dags.train_set_predictions import train_set_predictions
 from datetime import datetime
 import os
@@ -19,12 +19,12 @@ args = {
     'depends_on_past': True,
 }
 path = os.path.dirname(os.path.abspath(__file__))
-script = os.path.join(path, 'modelling')
+script = os.path.join(path, 'scoring.py')
 script_2 = os.path.join(path, 'train_set_predictions.py')
 
 params = {
     'bucket': Variable.get("bucket"),
-    'folder': 'dags/',
+    'folder': Variable.get("folder"),
     'project_id': Variable.get("project_id"),
     'script' : script,
     'script2' : script_2
@@ -54,23 +54,24 @@ task2 = BashOperator(
     bash_command='python3 {{ params.script }}'
 )
 
-task3 = PythonOperator(
-    dag = dag,
-    params = params,
-    task_id = 'task3',
-    provide_context = True,
-    python_callable = modelling,
-    op_kwargs = {'bucket': params['bucket'],'path': params['folder'],
-    }
-)
+#task3 = PythonOperator(
+    #dag = dag,
+    #params = params,
+    #task_id = 'task3',
+    #provide_context = True,
+    #python_callable = ,
+    #op_kwargs = {'bucket': params['bucket'],'path': params['folder'],
+    #}
+#)
 
 # Task 4: Generate Score
-task4 = BigQueryOperator(
-    dag = dag,
-    params = params,
-    task_id = 'task4',
-    use_legacy_sql = False,
-    bigquery_id = 'score_bq'
-)
 
-task1 >> task2 >> task3 >> task4
+#task4 = BigQueryOperator(
+    #dag = dag,
+    #params = params,
+    #task_id = 'task4',
+    #use_legacy_sql = False,
+    #bigquery_id = 'scoring'
+#)
+
+task1 >> task2
