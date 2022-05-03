@@ -39,5 +39,4 @@ This DAG loads the previous task, cleans the data, vectorizes the core, runs the
 
 ![image](https://user-images.githubusercontent.com/66652832/166336074-5483e09a-8e0d-4d68-b4b8-2034cb1fb156.png)
 
-
-
+Those predictions are stored in **scoring.scoring_v1**
