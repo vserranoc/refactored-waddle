@@ -3,7 +3,7 @@
 # Which airline is better for users or which airline is worse?
 # Description of models
 
-![image](https://user-images.githubusercontent.com/66652832/168450119-410da2e3-392b-497a-b43e-ef0029376331.png)
+![image](https://user-images.githubusercontent.com/66652832/168629842-b3f47f1a-ac77-4798-9e68-52404f098cdd.png)
 
 
 ## 1. Data
